@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.boer.delos.activity.scene.DeviceSettingListeningActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/id_textViewMatching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rect_blue"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/device_setting_activity_open_pairing"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_textViewMode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        />
+
+    <GridView
+        android:id="@+id/id_gridViewMode1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:background="#0000"
+        android:listSelector="#0000"
+        android:verticalSpacing="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line"/>
+
+    <TextView
+        android:id="@+id/id_textViewMode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        />
+
+    <GridView
+        android:id="@+id/id_gridViewMode2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:background="#0000"
+        android:listSelector="#0000"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_scence"
+            style="@style/RadioButtonBottomTab"
+            android:checked="true"
+            android:textColor="#555555"
+            android:drawableTop="@drawable/btn_device_setting_scence"
+            android:text="场景" />
+
+        <RadioButton
+            android:id="@+id/rb_air"
+            style="@style/RadioButtonBottomTab"
+            android:textColor="#555555"
+            android:drawableTop="@drawable/btn_device_setting_air"
+            android:text="空调" />
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            style="@style/RadioButtonBottomTab"
+            android:textColor="#555555"
+            android:drawableTop="@drawable/btn_device_setting_light"
+            android:text="灯光" />
+        <RadioButton
+            android:id="@+id/rb_socket"
+            style="@style/RadioButtonBottomTab"
+            android:textColor="#555555"
+            android:drawableTop="@drawable/btn_device_setting_socket"
+            android:text="插座" />
+
+        <RadioButton
+            android:id="@+id/rb_window"
+            style="@style/RadioButtonBottomTab"
+            android:textColor="#555555"
+            android:drawableTop="@drawable/btn_device_setting_window"
+            android:text="窗帘" />
+
+    </RadioGroup>
+</LinearLayout>

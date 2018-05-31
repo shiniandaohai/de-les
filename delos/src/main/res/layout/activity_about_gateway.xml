@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/layout_top_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@drawable/divider_ll"
+        android:showDividers="middle|end"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/style_settings_gateway_divider"
+            android:text="国家"
+            />
+        <TextView
+            style="@style/style_settings_gateway_divider"
+            android:text="城市"
+            />
+        <TextView
+            style="@style/style_settings_gateway_divider"
+            android:text="语言"
+            />
+        <TextView
+            style="@style/style_settings_gateway_divider"
+            android:text="小区"
+            />
+        <TextView
+            style="@style/style_settings_gateway_divider"
+            android:text="通道"
+            />
+        <TextView
+            style="@style/style_settings_gateway_divider"
+            android:text="房地产开发商"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.android.percent.support.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_item_dev"
+    >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/ivItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_living_room_light"/>
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/ivItem"
+            android:text="1"
+            android:textColor="@color/blue_title"
+            android:textSize="20sp"
+            app:layout_marginLeftPercent="8.5%"/>
+
+        <TextView
+            android:id="@+id/tvItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ivItem"
+            android:layout_marginBottom="3dp"
+            android:singleLine="true"
+            android:text="@string/lighting_control"
+            android:textColor="@color/blue_title"
+            android:textSize="16sp"
+           android:paddingRight="10dp"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_living_room_error"
+        android:visibility="gone"/>
+    <!--<com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        app:layout_widthPercent="52%"
+        app:layout_heightPercent="22%"
+        android:layout_height="0dp"
+        >
+        <ImageView
+            android:id="@+id/ivItem"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_living_room_light"
+            />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvCount"
+            app:layout_marginTopPercent="48%"
+            android:layout_toRightOf="@+id/ivItem"
+            app:layout_marginLeftPercent="6%"
+            android:textColor="@color/blue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+        <TextView
+            android:id="@+id/tvItemText"
+            app:layout_marginTopPercent="3%"
+            app:layout_marginLeftPercent="6%"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/tvCount"
+            android:layout_below="@+id/ivItem"
+            android:textColor="@color/blue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lighting_control"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_gravity="top|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_living_room_error"/>-->
+
+</com.zhy.android.percent.support.PercentFrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_solid_white_bg"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/my_center_bind_email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_small_txt" />
+
+            <EditText
+                android:id="@+id/etBindEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/shape_stroke_gray"
+                android:hint="@string/input_email"
+                android:inputType="textEmailAddress"
+                android:maxLength="6"
+                android:padding="8dp"
+                android:textColorHint="@color/gray_text"
+                android:textSize="@dimen/normal_small_txt" />
+
+
+            <include layout="@layout/item_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvBindCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/popup_scene_button_cancel"
+                    android:textColor="@color/blue_text_delos"
+                    android:textSize="@dimen/normal_small_txt" />
+
+                <View
+                    android:layout_width="0.8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_line" />
+
+                <TextView
+                    android:id="@+id/tvBindConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/popup_scene_button_ok"
+                    android:textColor="@color/blue_text_delos"
+                    android:textSize="@dimen/normal_small_txt" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

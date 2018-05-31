@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/llayout_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <RadioGroup
+            android:id="@+id/main_bottom_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/main_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/little_space"
+                android:drawableTop="@drawable/selector_main_home"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="@string/main_tab"
+                android:textColor="@drawable/main_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/main_mall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/little_space"
+                android:drawableTop="@drawable/selector_main_mall"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="@string/mall_tab"
+                android:textColor="@drawable/main_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/main_discovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/little_space"
+                android:drawableTop="@drawable/selector_main_discovery"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="@string/discovery_tab"
+                android:textColor="@drawable/main_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/main_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/little_space"
+                android:drawableTop="@drawable/selector_main_mine"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="@string/mine_tab"
+                android:textColor="@drawable/main_text_color_selector" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_above="@id/ll_bottom_bar"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llayout_status"
+        android:background="@color/white" />
+
+</RelativeLayout>

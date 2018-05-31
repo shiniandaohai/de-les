@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_bg"
+    android:orientation="vertical">
+
+        <include layout="@layout/layout_top_bar" />
+
+    <GridView
+        android:id="@+id/gvSceneManage"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:cacheColorHint="#0000"
+        android:listSelector="#0000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4" />
+</LinearLayout>

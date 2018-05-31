@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_top_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue_text"
+                android:textSize="18sp"
+                android:text="@string/use_electric_situation"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/green_current"
+                    android:textColor="#2c9ae5" />
+                <TextView
+                    android:id="@+id/tvWarmElectric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0A"
+                    android:layout_marginRight="60dp"
+                    android:textColor="@color/gray_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/power_text"
+                    android:textColor="#2c9ae5" />
+
+                <TextView
+                    android:id="@+id/tvWarmPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:text="0.0W"
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/green_pressed"
+                    android:textColor="#2c9ae5" />
+                <TextView
+                    android:id="@+id/tvWarmVoltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0V"
+                    android:layout_marginRight="60dp"
+                    android:textColor="@color/gray_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/electric_energy"
+                    android:textColor="#2c9ae5" />
+
+                <TextView
+                    android:id="@+id/tvWarmElectricEnergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:text="0.0kWh"
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="#2c9ae5" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:background="@drawable/shape_stroke_gray">
+
+                <Spinner
+                    android:id="@+id/spWarmElectricYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvWarmElectricYear"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:text="@string/green_year"
+                    android:textColor="#128ce3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvWarmElectricMonth"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:text="@string/green_month"
+                    android:textColor="#128ce3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvWarmElectricDay"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shape_double_circle_blue"
+                    android:gravity="center"
+                    android:text="@string/green_day"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="#2c9ae5" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvWarmYear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvWarmMonth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvWarmDay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="历史用量趋势"
+                android:textColor="@color/blue_text" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartWarmElectric"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:minHeight="260dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/tv_t66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T66-II"
+        android:drawableTop="@mipmap/ic_t66"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/white"
+        />
+    <TextView
+        android:id="@+id/tv_t30s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="T30S"
+        android:drawableTop="@mipmap/ic_t30"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/white"
+        />
+</LinearLayout>

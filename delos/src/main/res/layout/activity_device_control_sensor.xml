@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.boer.delos.widget.LightControlView
+        android:id="@+id/lightControlView"
+        app:isSensor="true"
+        app:light_num="1"
+        app:text_size="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_alarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="@string/sensor_alarm"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp">
+
+                <ImageView
+                    android:id="@+id/ivSecurityBlackPoint"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/ic_alarm_on" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_battery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="@string/sensor_energy"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+                <!--电池进度条-->
+                <com.boer.delos.widget.BatteryViewSelf
+                    android:id="@+id/battery_view"
+                    app:bvColor="#59cd6b"
+                    app:bvRadius="3"
+                    app:bvStrokeColor="@android:color/darker_gray"
+                    app:bvStrokeWidth="1dp"
+                    android:layout_width="40dp"
+                    android:layout_height="16dp"
+                    android:visibility="visible" />
+                <!--低压-->
+                <ImageView
+                    android:id="@+id/iv_lvolt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_gsm_lvolt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_battery_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textColor="@color/gray_et_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--门窗磁-->
+    <LinearLayout
+        android:id="@+id/ll_gsmStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/sensor_state"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvGsmStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="关闭"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <CheckedTextView
+            android:id="@+id/ctv_choice"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/tv_1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_sensor_on_off" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_on_off"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

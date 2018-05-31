@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="@dimen/gridview_horizontalSpacing"
+                android:paddingRight="@dimen/gridview_horizontalSpacing">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_txtUrineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#3a3a3a"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/id_txtUrineState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#3a3a3a"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_imageRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/rightskip"/>
+
+    <LinearLayout
+        android:id="@+id/id_linearLayoutAddView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/id_imageRight"
+        android:orientation="horizontal"
+        />
+
+
+</RelativeLayout>

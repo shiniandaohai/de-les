@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/red"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/shape_corner_gray_offline" android:state_checked="false"/>
+    <item android:drawable="@drawable/shape_corner_gray_offline"/>
+</selector>

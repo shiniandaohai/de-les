@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_base_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/text_style"
+            android:text="@string/text_waterBox_amount"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_amount_state"
+            style="@style/text_style"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_normal"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/text_style"
+            android:text="@string/text_waterBox_location"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_location_state"
+            style="@style/text_style"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_normal"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/text_style"
+            android:text="@string/text_water_clean_state"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_clean_state"
+            style="@style/text_style"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_normal"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/text_style"
+            android:text="@string/text_drain_water_state"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_deWater_state"
+            style="@style/text_style"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/text_normal"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/text_style"
+            android:text="@string/text_machine_state"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_machine_state"
+            style="@style/text_style"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_normal"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

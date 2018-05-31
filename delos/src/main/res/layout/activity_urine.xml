@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <ImageView
+        android:id="@+id/id_imageScanning"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/scanning"/>
+
+    <RelativeLayout
+        android:id="@+id/id_linearScanning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/id_textInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="未发现新数据"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_textInfo1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="为了你的健康，赶紧去测试吧"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/id_buttonReTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/rect_blue"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="重新测试"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

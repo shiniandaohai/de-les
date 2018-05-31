@@ -1,0 +1,63 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+
+    <!--舒适生活 viewPager上 gridView 每个图片的大小设置-->
+    <dimen name="item_comfort_live_imgv_height_and_width">70dp</dimen>
+    <!---舒适生活 viewPager上 gridView 左右边距-->
+    <dimen name="gridview_horizontalSpacing">10dp</dimen>
+    <dimen name="gridview_verticalSpacing">10dp</dimen>
+   <!-- <dimen name="gridview_margintop">5dp</dimen>-->
+    <dimen name="item_comfort_live_text_margin">10dp</dimen>
+    <dimen name="item_comfort_live_textsize">12sp</dimen>
+    <!--照明控制-->
+    <dimen name="lvchild_item_toggle_height">30dp</dimen>
+    <dimen name="lvchild_item_toggle_width">60dp</dimen>
+    <dimen name="lvchild_item_light_percent">40dp</dimen><!-- 子listView item 中灯的高度-->
+
+    <!--影音控制-->
+    <dimen name="function_contraller_height">50dp</dimen>
+    <dimen name="function_contraller_img_size">28dp</dimen>
+    <dimen name="funtion_contraller_margin">150dp</dimen>
+                <!--圆形控制区-->
+    <dimen name="circle_contraller_size">44dp</dimen><!--中间OK 键-->
+    <dimen name="circle_contraller_height">28dp</dimen>
+    <dimen name="circle_contraller_width">67.5dp</dimen>
+
+    <!--空调控制-->
+    <dimen name="ac_contraller_height">50dp</dimen><!--头部-->
+    <dimen name="ac_contraller_margin_top">20dp</dimen>
+    <dimen name="ac_contraller_textsize_OFF">24sp</dimen>
+    <dimen name="ac_contraller_textsize_setting_temperature">12sp</dimen>
+    <dimen name="ac_contraller_textsize_C">20sp</dimen>
+    <dimen name="ac_contraller_turn_on_off">30dp</dimen>
+    <!--弧形进度条-->
+    <dimen name="ac_contraller_button_decrease_size">40dp</dimen>
+    <dimen name="ac_contraller_button_decrease_margin">150dp</dimen>
+    <dimen name="ac_contraller_seekArc_textsize">16sp</dimen>
+    <dimen name="ac_contraller_seekArc_padding">0dp</dimen>
+
+    <dimen name="ac_contraller_img_size">56dp</dimen>
+    <dimen name="ac_contraller_margin">150dp</dimen>
+    <dimen name="ac_contraller_textsize">14sp</dimen>
+    <!--新增设备 recycleView top2 item设置-->
+    <dimen name="add_device_item_add_device_size">80dp</dimen>
+    <dimen name="add_device_item_add_device_img_size">30dp</dimen>
+    <dimen name="add_device_item_add_device_tv_height">20dp</dimen>
+    <dimen name="add_device_item_add_device_textsize">12sp</dimen>
+    <dimen name="add_device_item_add_device_padding">3dp</dimen>
+
+    <!--每个房间的管理控制界面 item  item_scene_display-->
+    <dimen name="scene_display_item_img_size">40dp</dimen>
+    <dimen name="scene_display_item_parent_margin">20dp</dimen>
+    <dimen name="scene_display_item_tvcount_textsize">16sp</dimen>
+    <dimen name="scene_display_item_tvcount_marginleft">30dp</dimen>
+    <dimen name="scene_display_item_tvitemtext_textsize">12sp</dimen>
+    <dimen name="scene_display_item_tvitemtext_marfinbottom">3dp</dimen>
+
+    <!--系統設置-->
+    <dimen name="system_setting_toggle_height">30dp</dimen>
+    <dimen name="system_setting_toggle_width">40dp</dimen>
+
+</resources>

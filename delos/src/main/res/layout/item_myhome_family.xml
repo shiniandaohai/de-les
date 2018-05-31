@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/llItemContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.boer.delos.view.CircleImageView
+            android:id="@+id/ivUserHead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_avatar" />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="小黄人"
+            android:textColor="@color/black_text" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivItemAdministrator"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_family_manage_person"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_show_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_personal_center_more"
+            android:paddingRight="10dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

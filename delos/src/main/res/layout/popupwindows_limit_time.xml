@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D5E5E5E"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/family_text_limit_title"
+            android:textColor="@color/black"
+            android:background="@color/blue"
+            android:textSize="@dimen/normal_small_txt" />
+
+        <include layout="@layout/item_line" />
+
+        <RadioGroup
+            android:id="@+id/rg_limit_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbtn_unlimit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:button="@drawable/sel_blue_white_tick"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:text="@string/family_unlimit_time"
+                android:textColor="@color/black" />
+
+
+            <RadioButton
+                android:id="@+id/rbtn_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:button="@drawable/sel_blue_white_tick"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="@string/family_limit_time" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/id_linePickTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.jzxiang.pickerview.wheel.WheelView
+                    android:id="@+id/day"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_small_txt" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.jzxiang.pickerview.wheel.WheelView
+                    android:id="@+id/hour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_hour"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_small_txt" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/id_textCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_small_txt" />
+
+        <TextView
+            android:id="@+id/id_textSure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_small_txt" />
+    </LinearLayout>
+</LinearLayout>

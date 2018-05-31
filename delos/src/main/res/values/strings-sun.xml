@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_device_offline">设备离线状态</string>
+    <string name="text_over_current_time">所选时间不能超过当前时间</string>
+    <string name="toast_login_again">请重新登录</string>
+    <string name="toast_gateway_error">请求网关异常，请检查网络</string>
+    <string name="toast_measure_error">测量数据无效</string>
+    <!--首页-->
+    <string name="device_buy">我没有%s,点此购买</string>
+    <string name="device_go">我有%s,自动测量</string>
+    <string name="device_input">我有%s,手动录入</string>
+    <!--台上净水器-->
+    <string name="state_water_shortage">缺水状态</string>
+    <string name="state_water_leakage">漏水故障</string>
+    <string name="state_flush_state">冲洗状态</string>
+    <string name="text_nor_flush">未冲洗</string>
+    <string name="text_auto_flush">自动冲洗</string>
+    <string name="text_hand_flush">手动冲洗</string>
+    <string name="replace_filter_cartridge">更换滤芯</string>
+    <string name="text_water_statistics">用水量统计</string>
+    <string name="text_filter_status">滤芯状态</string>
+
+
+    <string name="text_filter_cartridge1">滤芯1</string>
+    <string name="text_filter_cartridge2">滤芯2</string>
+    <string name="text_filter_cartridge3">滤芯3</string>
+    <string name="text_filter_cartridge4">滤芯4</string>
+    <string name="water_short">缺水</string>
+    <string name="water_move">移开</string>
+    <string name="water_fault">故障</string>
+    <string name="water_product">制水</string>
+    <string name="water_leak">漏水</string>a
+    <string name="water_product_always">连续制水</string>
+    <string name="text_normal_fault">正常无故障</string>
+    <!--报警设备-->
+    <string name="sensor_alarm">报警:</string>
+    <string name="sensor_energy">电量:</string>
+    <string name="sensor_state">状态:</string>
+    <string name="sensor_on">报警中</string>
+    <string name="sensor_off">未报警</string>
+
+    <!--健康-->
+    <string name="health_blood_pressure">血压</string>
+    <string name="health_blood_sugar">血糖</string>
+    <string name="health_weight">体脂秤</string>
+    <string name="health_urine">尿常规</string>
+    <string name="health_skin">皮肤检测</string>
+    <string name="health_magic_mirror">魔镜</string>
+
+    <string name="toast_bluetooth_nor">该设备不支持蓝牙</string>
+
+    <string name="text_auto_measure">自动测量</string>
+    <string name="text_history_record">历史记录</string>
+    <string name="text_hand_input">手动录入</string>
+    <string name="text_major_info">专业信息</string>
+
+    <string name="text_measure_again">重新测量</string>
+    <string name="text_save_data">保存数据</string>
+    <string name="text_measure_ing">开始测量</string>
+    <string name="text_connect_ing">正在连接中</string>
+    <string name="text_connect_fail">连接失败</string>
+    <string name="text_measure_success">测量完成</string>
+    <string name="text_disconnect">连接断开</string>
+    <string name="text_upload_failure">上传失败，数据错误</string>
+    <string name="toast_query_data_failure">健康数据，查询失败请重试</string>
+    <string name="toast_measure_first">请先进行测量</string>
+    <!--血压-->
+    <string name="text_diastolic_pressure">舒张压(mmHg)</string>
+    <string name="text_systolic_pressure">收缩压(mmHg)</string>
+    <string name="text_date">日期</string>
+    <string name="toast_input_please">请输入</string>
+    <string name="toast_update_ing">上传中...</string>
+    <string name="toast_update_success">上传成功</string>
+    <string name="toast_update_failure">上传失败</string>
+    <string name="toast_delete_success">删除成功</string>
+    <string name="toast_delete_failure">删除失败</string>
+    <string name="toast_query_failure">查询数据失败</string>
+    <!--血糖-->
+    <string name="text_sugar_prompt">提示：您可点击表格手动添加和编辑血糖数据；您还可以点击表格左上角切换月份，查看历史数据</string>
+
+    <!--体重-->
+    <string name="text_weight">体重</string>
+    <string name="text_fat_rate">体脂率</string>
+    <string name="text_muscle_rate">肌肉率</string>
+    <string name="text_water">水</string>
+    <string name="text_bone">骨质</string>
+    <string name="text_BMR">基础代谢</string>
+    <string name="text_BMI">BMI</string>
+    <string name="text_thin">消瘦</string>
+    <string name="text_invalid">数据无效,请脱鞋重新测量!</string>
+    <string name="text_weight_prompt">体重和体脂率请至少填写一项</string>
+
+    <string name="text_health_advice">健康建议</string>
+    <string name="text_blood_sugar_monitor">血糖仪</string>
+    <string name="text_blood_press_monitor">血压仪</string>
+    <string name="text_weight_monitor">体脂秤</string>
+    <string name="text_urine_monitor">尿检仪</string>
+
+
+    <string name="text_alarm_link_plan_setting">报警联动预案配置</string>
+    <string name="text_link_setting">联动配置</string>
+    <string name="text_alarm_ing">报警时</string>
+    <string name="text_alarm_revert">恢复后</string>
+    <string name="text_gas_strength">气体浓度</string>
+    <string name="text_gas_over_standard">超标时</string>
+    <string name="text_gas_reach_standard">达标时</string>
+    <string name="toast_loading">加载中...</string>
+    <string name="toast_change_to_current_user">请切换至当前登录用户</string>
+
+    <!--体脂率标准-->
+    <string name="weight_fat_rate_level" formatted="false">正常范围是21.0%-28.0%</string>
+    <string name="weight_fat_rate_high" formatted="false">若体脂率过高，体重超过正常的20%以上就可视为肥胖。肥胖则表明运动不足、营养过剩或有可能某种内分泌系统的疾病，而且常会并发高血压、高血脂症、动脉硬化、冠心病、糖尿病、胆囊炎等病症。建议减少高血脂、高热量的食物摄入，避免营养过剩。加强脂肪燃烧运动。</string>
+    <string name="weight_fat_rate_low" formatted="false">适当的脂肪，能通过生化作用转化成雌激素等，增加钙的吸收，促进骨的形成，防止骨质疏松。脂肪偏低，可能造成闭经、不孕、骨质疏松，还会引起记忆衰退、脱发等。建议您饮食摄入营养要均衡，并且加强运动。</string>
+    <string name="weight_fat_rate_normal" formatted="false">体脂率是指人体内脂肪重量在人体总体重中所占的比例，又称体脂百分数，它反映人体内脂肪含量的多少。</string>
+
+    <!--骨骼标准-->
+    <string name="weight_bone_level" formatted="false">正常范围是3.0%-4.8%</string>
+    <string name="weight_bone_high" formatted="false">骨骼过高的人不多见,如果过高可能会增加骨质增生发送的概率和患乳腺癌的风险。建议您适当减轻体重,避免剧烈运动,多食蔬菜,水果等食物.</string>
+    <string name="weight_bone_low" formatted="false">骨骼偏低的人易导致骨质疏松、骨折和牙齿松动等现象。建议多参加户外运动，多接受阳光照射，饮食中适当增加含钙、钾丰富的食物。</string>
+    <string name="weight_bone_normal" formatted="false">人体骨矿物质含量与骨骼强度和内环境稳定密切相关，因而是评价人类健康状况的重要指标。在生理状态下，人体骨骼中骨矿物质含量随年龄不同而异，在病理状态下，某些药物可导致骨矿含量改变。因此人体骨矿含量的定量测定已成为现代医学的一个重要课题。</string>
+
+    <!--肌肉率-->
+    <string name="weight_muscle_level" formatted="false">正常范围是32.0%-38.0%</string>
+    <string name="weight_muscle_high" formatted="false">肌肉率偏高会增加身体负荷，骨骼、心脏负荷随之增加，在日常生活中更易疲劳。建议运动有度，有氧运动为主，同时少摄入热量高的食物。</string>
+    <string name="weight_muscle_low" formatted="false">肌肉率偏低，热量消耗随之降低，摄入的过多热量便转化成脂肪堆积于体内，形成肥胖。还会诱发心血管疾病、关节类疾病等。</string>
+
+    <string name="weight_muscle_advice" formatted="false">建议您加强活动，尤其需要做一些抗阻运动如哑铃等，以增加肌肉群的饱满度。</string>
+
+    <string name="weight_muscle_normal" formatted="false">肌肉率是根据人体肌肉总量和人体体重、身高等相结合得到的人体的一个比例值，这个值的范围决定一个人的身体健康状况以及力量的多少。</string>
+
+    <!--水分-->
+    <string name="weight_water_level" formatted="false">正常范围是50.0%-60.0%</string>
+    <string name="weight_water_high" formatted="false">如果水摄入量超过肾脏排出的能力,可引起体内水过多或引起中毒,多见于疾病患者,正常人极少出现水中毒.水中毒时,可因脑细胞肿胀,脑组织水肿,颅内压增高而引起头痛,恶心,呕吐,记忆力减退,更甚者可发生渐进性精神迟钝,恍惚,昏迷,惊阙等.严重者可引起死亡.建议您发生水中毒时需及时就医以查明原因,另外需科学饮水.</string>
+
+    <string name="weight_water_low" formatted="false">一般人失水占体重的2%，表现为口渴、尿少；失水达体重的10%，则表现烦躁、体温和脉搏增加、血压下降等现象；失水超体重的20%，可导致死亡。建议每天适当补充水分，多饮用。</string>
+    <string name="weight_water_normal" formatted="false">人体内的总体水可因年龄、性别和体型的胖瘦而存在明显个体差异。新生儿总体水最多，约占体重的80%；成年男子总体水约占体重的60%，女子为50%-55%；60岁以上的男性为体重的51.5%、女性为45.5%，因此，水是人体当之无愧的第一要素。</string>
+
+    <!--基础代谢-->
+    <string name="weight_basal_metabolism_level" formatted="false">正常范围是（1514.2-1850.7）kcal/天</string>
+    <string name="weight_basal_metabolism_high" formatted="false">基础代谢是指人体维持生命的所有器官所需要的最低能量。测定时要求人体在清醒而又极端安静的状态下，不受肌肉活动、环境温度、食物及精神紧张等影响。</string>
+    <string name="weight_basal_metabolism_low" formatted="false">基础代谢是指人体维持生命的所有器官所需要的最低能量。测定时要求人体在清醒而又极端安静的状态下，不受肌肉活动、环境温度、食物及精神紧张等影响。</string>
+    <string name="weight_basal_metabolism_normal" formatted="false">基础代谢是指人体维持生命的所有器官所需要的最低能量。测定时要求人体在清醒而又极端安静的状态下，不受肌肉活动、环境温度、食物及精神紧张等影响。</string>
+
+    <!--BMI-->
+    <string name="weight_bmi_super" formatted="false">超级肥胖 ≥40 kg/㎡</string>
+    <string name="weight_bmi_more" formatted="false">严重肥胖 30-39.9 kg/㎡</string>
+    <string name="weight_bmi_fate" formatted="false">肥胖 28-29.9 kg/㎡</string>
+    <string name="weight_bmi_over" formatted="false">超重 24-27.9 kg/㎡</string>
+    <string name="weight_bmi_normal" formatted="false">正常 18.5-23.9 kg/㎡</string>
+    <string name="weight_bmi_thin" formatted="false">消瘦 ＜18.5 kg/㎡</string>
+
+    <string name="mode_default">默认模式</string>
+    <string name="toast_loading_fail">加载失败，请重试!</string>
+    <string name="mode_global">全局模式</string>
+    <string name="toast_please_choice_mode">请选择模式！</string>
+    <string name="toast_please_choice_btn">请选择场景面板按钮！</string>
+
+    <string name="camera_mode_low">较低</string>
+    <string name="camera_mode_well">适中</string>
+    <string name="camera_mode_high">清晰</string>
+
+    <string name="camera_video_play">录像播放</string>
+
+    <string name="music_background_music">背景音乐</string>
+    <string name="music_unknown"></string>
+    <string name="music_type_1">普通</string>
+    <string name="music_type_2">摇滚</string>
+    <string name="music_type_3">流行</string>
+    <string name="music_type_4">舞曲</string>
+    <string name="music_type_5">嘻哈</string>
+    <string name="music_type_6">古典</string>
+    <string name="music_type_7">超重低音</string>
+    <string name="music_type_8">人声</string>
+
+    <string name="music_link_success">关联成功</string>
+    <string name="device_choice_brand">选择设备:</string>
+
+    <string name="music_no_file">没有音乐文件</string>
+    <string name="music_play_fail">操作失败</string>
+
+    <string name="device_panel_2">两按钮</string>
+    <string name="device_panel_3">三按钮</string>
+    <string name="device_panel_4">四按钮</string>
+
+
+</resources>

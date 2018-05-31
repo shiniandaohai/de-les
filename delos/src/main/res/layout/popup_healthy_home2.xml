@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="210dp"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:text="@string/device_buy"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_color" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:text="@string/device_go"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_color" />
+
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+
+            android:background="@color/white"
+            android:text="@string/device_input"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_color" />
+    </LinearLayout>
+</LinearLayout>

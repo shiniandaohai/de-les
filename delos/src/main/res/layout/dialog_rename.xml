@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/shape_solid_white_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="重命名"
+            android:textColor="@color/gray_et_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/shape_stroke_gray"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/gray_et_text"
+            android:textColorHint="@color/gray_et_hint"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDisagree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_scene_button_cancel"
+                android:textColor="@color/blue_text_delos"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/tvAgree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_scene_button_ok"
+                android:textColor="@color/blue_text_delos"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

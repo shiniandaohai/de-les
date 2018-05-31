@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#dce8f9"
+        android:gravity="center"
+        android:text="确保手机和主机在同一WiFi下"
+        android:textColor="#9a9a9a"
+        app:layout_heightPercent="8%"
+        app:layout_textSizePercent="4.7%w" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="10%"
+        app:layout_paddingLeftPercent="7%w"
+        app:layout_paddingRightPercent="10%w"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/ivBindWifiLink"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_gateway_bind_wifilink"
+            app:layout_heightPercent="40%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivBindWifiLink"
+            android:text="@string/bind_wifi_link_name"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="4%w"
+            />
+
+        <ImageView
+            android:id="@+id/ivBindRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_gateway_bind_refresh"
+            app:layout_heightPercent="40%"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.boer.delos.widget.MyListView
+                android:id="@+id/lvGatewayList"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

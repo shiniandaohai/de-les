@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    当获取焦点、没有按下的时候显示的图片
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/circle_unpress" />
+    当获取焦点、按下的时候显示的图片
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/circle_unpress" />
+    当没有获取焦点、按下的时候
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/circle_unpress" />
+    其他状态的时候
+    <item android:drawable="@drawable/circle_unpress" />
+</selector>

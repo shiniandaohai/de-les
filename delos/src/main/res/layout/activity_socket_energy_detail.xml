@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="用电概况"
+                android:textColor="#2c9ae5"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/green_pressed"
+                        android:textColor="#2c9ae5"/>
+
+                    <TextView
+                        android:id="@+id/tvVoltage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:text="0.0V"
+                        android:textColor="@color/gray_text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/power_text"
+                        android:textColor="#2c9ae5"/>
+
+                    <TextView
+                        android:id="@+id/tvPower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0P"
+                        android:textColor="@color/gray_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/green_current"
+                        android:textColor="#2c9ae5"/>
+
+                    <TextView
+                        android:id="@+id/tvElectricCurrent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:text="0.0A"
+                        android:textColor="@color/gray_text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/electric_energy"
+                        android:textColor="#2c9ae5"/>
+
+                    <TextView
+                        android:id="@+id/tvElectric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0kWh"
+                        android:textColor="@color/gray_text"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="#2c9ae5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_stroke_gray"
+                        android:gravity="center">
+
+                        <Spinner
+                            android:id="@+id/spElectricYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvElectricYear"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_circle_blue"
+                            android:gravity="center"
+                            android:text="@string/green_year"
+                            android:textColor="#128ce3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvElectricMonth"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_circle_blue"
+                            android:gravity="center"
+                            android:text="@string/green_month"
+                            android:textColor="#128ce3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvElectricDay"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_double_circle_blue"
+                            android:gravity="center"
+                            android:text="@string/green_day"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="#2c9ae5"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvElectricityYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvElectricityMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvElectricityDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/gray_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/history_level_trend"
+                android:textColor="@color/blue_text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="@string/kwh_parenthesis"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/green_total"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/total_kWh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/t"
+                    android:paddingLeft="5dp"
+                    android:text="0.0kWh"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lcElectricityHistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:minHeight="260dp"/>
+
+            <TextView
+                android:id="@+id/tvElectricDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textColor="#2c9ae5"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

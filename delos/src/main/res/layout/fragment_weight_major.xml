@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_weight_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="30%"
+        android:textColor="@color/item_black_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_weight_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text=""
+        android:textColor="@color/gray_et_hint"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_weight_normal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="@color/gray_et_hint"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_weight_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:text=""
+        android:textColor="@color/gray_et_text"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.5"
+        tools:text="的fks第六届镭豆精仿了快速将大幅上kdj上来打开 哦i进洞房间了深刻的肌肤"
+        />
+</LinearLayout>

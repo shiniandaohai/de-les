@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_solid_white_bg"
+        android:orientation="vertical"
+        app:layout_heightPercent="70%h"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/top_bar"
+            android:gravity="center"
+            android:text="请选择模式"
+            android:textColor="@color/white"
+            app:layout_heightPercent="13%" />
+
+        <ExpandableListView
+            android:id="@+id/ExpandableListViewPannelSetting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_solid_white_bg"
+            android:backgroundTint="#0000"
+            android:cacheColorHint="#0000"
+            android:listSelector="#0000"
+            app:layout_heightPercent="87%" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
+

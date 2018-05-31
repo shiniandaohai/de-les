@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llBloodSugar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        app:layout_heightPercent="20%"
+        app:layout_marginTopPercent="2%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_sugar_device"
+                android:textColor="#3A3A3A"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="10%"/>
+
+            <TextView
+                android:id="@+id/tvBloodSugarStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#E4970D"
+                android:textSize="14sp"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvBloodSugarValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A3A3A"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvBloodSugarDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#898989"
+                app:layout_marginTopPercent="3%"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_device_blood_sugar"
+            app:layout_widthPercent="90%h"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E2E2E2"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llBloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        app:layout_heightPercent="20%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_pressure_device"
+                android:textColor="#3A3A3A"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="10%"/>
+
+            <TextView
+                android:id="@+id/tvBloodPressStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#4EAE0F"
+                android:textSize="14sp"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvBloodPressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A3A3A"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvBloodPressDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#898989"
+                app:layout_marginTopPercent="3%"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_device_blood_press"
+            app:layout_widthPercent="90%h"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E2E2E2"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llBodyFat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        app:layout_heightPercent="20%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/body_fat_device"
+                android:textColor="#3A3A3A"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="10%"/>
+
+            <TextView
+                android:id="@+id/tvBodyFatStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#4EAE0F"
+                android:textSize="14sp"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvBodyFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A3A3A"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvBodyFatDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#898989"
+                app:layout_marginTopPercent="3%"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_device_body_fat"
+            app:layout_widthPercent="90%h"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E2E2E2"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llUro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        app:layout_heightPercent="20%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uro_device"
+                android:textColor="#3A3A3A"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="10%"/>
+
+            <TextView
+                android:id="@+id/tvUroStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/transparent"
+                android:textSize="14sp"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvUroValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A3A3A"
+                app:layout_marginTopPercent="3%"/>
+
+            <TextView
+                android:id="@+id/tvUroDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#898989"
+                app:layout_marginTopPercent="3%"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_device_uro"
+            app:layout_widthPercent="90%h"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E2E2E2"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

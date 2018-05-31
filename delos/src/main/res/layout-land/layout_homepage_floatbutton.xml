@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.boer.jiaweishi.widget.MyFloatRelativeLayout
+        android:id="@+id/myfloatbutton"
+        android:layout_width="@dimen/homepage_modesetting_floataction_size"
+        android:layout_height="@dimen/homepage_modesetting_floataction_size"
+        android:background="@drawable/bg_homepage_modemanager">
+
+        <ImageView
+            android:id="@+id/img_floatButton_mode"
+            android:layout_width="@dimen/homepage_modesetting_pic_size"
+            android:layout_height="@dimen/homepage_modesetting_pic_size"
+            android:layout_marginTop="@dimen/homepage_modesetting_pic_margintop"
+            android:src="@drawable/ic_homepage_model_selection"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tv_floatButton_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_model_select"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/homepage_modesetting_text_marginbottom"
+            android:textSize="@dimen/homepage_modesetting_textsize" />
+
+    </com.boer.jiaweishi.widget.MyFloatRelativeLayout>
+</LinearLayout>

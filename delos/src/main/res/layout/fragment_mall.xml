@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <com.boer.delos.view.TitleLayout
+        android:id="@+id/tl_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_clean"
+            android:text="@string/mall_clean"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_light"
+            android:text="@string/mall_light"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_intelligence"
+            android:text="@string/mall_intelligence"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_sleep"
+            android:text="@string/mall_sleep"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <TextView
+            android:id="@+id/tv_cleanline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_btn_bg"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_lightline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_smartline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_sleepline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/web_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

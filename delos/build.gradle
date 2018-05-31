@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'delos'
+            keyPassword '123456'
+            storeFile file('../key/delos123.jks')
+            storePassword '123456'
+        }
+
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('../key/delosdebug.keystore')
+            storePassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug{
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            /*if (outputFile != null && outputFile.name.endsWith('-release.apk')) {
+                //这里修改apk文件名
+                def fileName = "delos_release_v${defaultConfig.versionName}_${releaseTime()}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            } else if (outputFile != null && outputFile.name.endsWith('-debug.apk')) {
+                //这里修改apk文件名
+                def fileName = "delos_debug_v${defaultConfig.versionName}_${releaseTime()}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }*/
+        }
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:design:$rootProject.ext.supportVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:cardview-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:support-annotations:$rootProject.ext.supportVersion"
+    compile 'com.google.code.gson:gson:2.4'
+    //    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.facebook.fresco:fresco:0.8.1'
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile 'com.facebook.fresco:imagepipeline-okhttp:0.8.1'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.3'
+    compile 'com.github.shinelw:library:1.0.1'
+    compile 'com.bigkoo:svprogresshud:1.0.2'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile project(':TimePickerDialog')
+    compile project(':swipeMenuListView')
+    compile project(':PullToRefreshLibrary')
+    compile files('libs/shake_ed_bt_1_0.jar')
+    compile project(':SeekArc_library')
+    compile project(':colorarcprogressbarlibrary')
+    compile 'pub.devrel:easypermissions:0.3.0'
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile 'org.dom4j:dom4j:2.0.0'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+    compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.7'
+}

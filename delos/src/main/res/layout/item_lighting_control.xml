@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_line"/>
+
+    <TextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#A1F8F8F8"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/gray_text"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"/>
+
+    <com.boer.delos.widget.MyListView
+        android:id="@+id/lvLightChildList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"/>
+    <!--<com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="7%"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_live_light_close"
+            />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gray_text"/>
+
+        <ToggleButton
+            android:id="@+id/tbItemSwitch"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            app:layout_marginLeftPercent="56%"
+            app:layout_marginTopPercent="3%"
+            android:textOn=""
+            android:textOff=""
+            android:textColor="@color/common_bg"
+            android:background="@drawable/selector_toggle"
+            android:checked="false" />
+    </com.zhy.android.percent.support.PercentLinearLayout>-->
+
+</LinearLayout>

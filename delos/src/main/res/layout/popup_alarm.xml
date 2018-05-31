@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_alarm_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/shape_solid_white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/popup_restore_title"
+            android:textColor="@color/black"
+            app:layout_marginTopPercent="16%h"
+            app:layout_textSizePercent="6.5%w" />
+
+        <TextView
+            android:id="@+id/id_textViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lines="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_marginTopPercent="6%h" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray_line"
+            app:layout_marginTopPercent="16%h" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="30%">
+
+
+            <TextView
+                android:id="@+id/tvRestoreConfirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/confirm_limit"
+                android:textColor="#0c80ff"
+                app:layout_textSizePercent="6%w" />
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

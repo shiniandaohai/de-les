@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+    <TextView
+        style="@style/style_camera_mode"
+        android:text="最高"
+        />
+    <TextView
+        style="@style/style_camera_mode"
+        android:layout_marginTop="20dp"
+        android:text="高"
+        />
+    <TextView
+        style="@style/style_camera_mode"
+        android:layout_marginTop="20dp"
+        android:text="适中"
+        />
+    <TextView
+        style="@style/style_camera_mode"
+        android:layout_marginTop="20dp"
+        android:text="低"
+        />
+    <TextView
+        style="@style/style_camera_mode"
+        android:layout_marginTop="20dp"
+        android:text="最低"
+        />
+</LinearLayout>

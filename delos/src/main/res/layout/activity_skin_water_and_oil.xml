@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekColorBar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/gv_skin_area"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水份"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/water_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0%"
+                android:layout_marginLeft="10dp"
+                android:textColor="#85b9e6"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <com.boer.delos.widget.SeekColorBar
+            android:id="@+id/seek_color_water"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            seekColorBar:firstColor="@color/skin_good"
+            seekColorBar:firstSize="40"
+            seekColorBar:firstText="@string/skin_water_less"
+            seekColorBar:secondColor="@color/skin_better"
+            seekColorBar:secondSize="20"
+            seekColorBar:secondText="@string/skin_ok"
+            seekColorBar:seekProgress="0"
+            seekColorBar:seekThumb="@mipmap/seek_thumb"
+            seekColorBar:thirdColor="@color/skin_best"
+            seekColorBar:thirdSize="40"
+            seekColorBar:thirdText="@string/skin_water_more"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="油份"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/oil_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0%"
+                android:layout_marginLeft="10dp"
+                android:textColor="#85b9e6"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <com.boer.delos.widget.SeekColorBar
+            android:id="@+id/seek_color_oil"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            seekColorBar:firstColor="@color/skin_oil_good"
+            seekColorBar:firstSize="15"
+            seekColorBar:firstText="@string/skin_oil_less"
+            seekColorBar:secondColor="@color/skin_oil_better"
+            seekColorBar:secondSize="10"
+            seekColorBar:secondText="@string/skin_ok"
+            seekColorBar:seekProgress="0"
+            seekColorBar:seekThumb="@mipmap/seek_thumb"
+            seekColorBar:thirdColor="@color/skin_oil_best"
+            seekColorBar:thirdSize="85"
+            seekColorBar:thirdText="@string/skin_oil_more"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/normalOkButtonFull"
+        android:id="@+id/btn_reset"
+        android:text="@string/txt_bluetooth_again_test"
+        android:textSize="@dimen/normal_txt"
+        android:visibility="gone" />
+</LinearLayout>

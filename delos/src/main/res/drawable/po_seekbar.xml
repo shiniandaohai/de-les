@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"> 蓝色背景设置
+        <shape>
+            <solid android:color="#0000ff" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">红色进度颜色设置
+        <clip>
+            <shape>
+                <solid android:color="#ff0000" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">紫色拉动进度颜色设置
+        <clip>
+            <nine-patch android:src="@drawable/liveview_info" />
+        </clip>
+    </item>
+</layer-list>

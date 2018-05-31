@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ImageView
+        android:id="@+id/ivAboutUsTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/login_logo"
+        android:visibility="gone"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="20%" />
+
+    <TextView
+        android:id="@+id/tvAboutUsVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAboutUsTop"
+        android:layout_centerInParent="true"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/introduction_jia"
+        android:textColor="#3e3e3e"
+        android:visibility="gone"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_textSizePercent="2.8%" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.zhy.android.percent.support.PercentLinearLayout>

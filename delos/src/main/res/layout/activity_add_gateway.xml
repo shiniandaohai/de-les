@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:text="@string/gateway_bind_hint"
+        android:textColor="@color/gray_et_text"
+        android:textSize="14sp"
+        />
+
+    <ListView
+        android:id="@+id/lv_gateway"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent"
+
+        />
+
+
+</LinearLayout>

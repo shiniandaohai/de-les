@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/layout_base_bg"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="10dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ll_device_nor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_home_device"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_1"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_add_device_step"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+</FrameLayout>

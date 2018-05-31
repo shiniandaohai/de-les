@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_gray_line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+            <!--上半部分-->
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="16"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvBloodDate"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="2015-11-30"
+                        android:textColor="@color/gray_text"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tvBloodData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:gravity="center"
+                        android:text="7.8 "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/blood_sugar_unit"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivBloodHelp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_help"
+                        />
+                    <!-- <TextView
+                         android:id="@+id/tvBloodHelp"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:gravity="center"
+                         android:background="@drawable/shape_circle_blue"
+                         android:text="@string/blood_sugar_help"
+                         android:textColor="@color/blue_text"
+                         android:textSize="16sp"
+                         />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@color/blood_item_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/blood_date_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvBloodMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2016-01"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="月份"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_breakfast"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_lunch"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_dinner"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_fasting"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_after"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_before"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_after"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_before"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/blood_sugar_after"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="@string/blood_sugar_sleep_before"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:orientation="horizontal">
+
+                        <com.boer.jiaweishi.widget.MyListView
+                            android:id="@+id/lvMonth"
+                            android:layout_width="52dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/blood_item_bg"
+                            android:divider="@null"
+                            android:scrollbars="none"/>
+
+                        <com.boer.jiaweishi.widget.MyGridView
+                            android:id="@+id/gvBloodDetail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:numColumns="7"
+                            android:scrollbars="none"/>
+                    </LinearLayout>
+
+
+                </ScrollView>
+            </LinearLayout>
+            <!--上半部分结束-->
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray_line"
+                />
+
+            <!--下半部分开始-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <!--  <com.github.mikephil.charting.charts.PieChart
+                          android:id="@+id/pieChart"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                           android:layout_above="@+id/seekBar1"/>-->
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/bloodChart"
+                        android:layout_width="260dp"
+                        android:layout_height="260dp"
+                        android:layout_centerInParent="true"
+
+                        />
+
+                    <SeekBar
+                        android:id="@+id/seekBar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/tvYMax"
+                        android:max="200"
+                        android:paddingBottom="12dp"
+                        android:visibility="gone"/>
+
+                    <SeekBar
+                        android:id="@+id/seekBar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/seekBar2"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/tvXMax"
+                        android:max="25"
+                        android:paddingBottom="12dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvXMax"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/seekBar1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvYMax"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/seekBar2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

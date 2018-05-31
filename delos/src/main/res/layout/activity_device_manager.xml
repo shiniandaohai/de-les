@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_base_bg"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_item_circle" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_item_circle"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_select_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/text_select_all"
+            android:textColor="@color/gray_et_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/split_line_color" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/text_delete"
+            android:textColor="@color/gray_text_delete_nor"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

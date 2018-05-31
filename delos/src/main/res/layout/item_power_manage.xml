@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_line"/>
+    <TextView
+        android:id="@+id/tvPowerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F8F8F8"
+        android:text="@string/power_warmer"
+        android:textSize="18sp"
+        android:textColor="@color/gray_text"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="13%"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivPowerImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="60%"
+                    app:layout_heightPercent="80%"
+                    android:src="@drawable/selector_light"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="65%"
+                    app:layout_marginTopPercent="5%"
+                    android:orientation="horizontal">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/green_current"
+                                    android:textColor="@color/gray_text"/>
+
+                                <TextView
+                                    android:id="@+id/tvPowerElectric"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.00A"
+                                    android:textColor="@color/gray_text"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/green_pressed"
+                                    android:textColor="@color/gray_text"/>
+
+                                <TextView
+                                    android:id="@+id/tvPowerVoltage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0V"
+                                    android:textColor="@color/gray_text"/>
+                            </LinearLayout>
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/power_text"
+                                    android:textColor="@color/gray_text"/>
+
+                                <TextView
+                                    android:id="@+id/tvPower"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.0W"
+                                    android:textColor="@color/gray_text"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/electric_energy"
+                                    android:textColor="@color/gray_text"/>
+
+                                <TextView
+                                    android:id="@+id/tvElectricEnergy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0kWh"
+                                    android:textColor="@color/gray_text"/>
+                            </LinearLayout>
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingRight="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/tbSwitch"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/selector_toggle"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="30%">
+
+                    <TextView
+                        android:id="@+id/tvEnergyConsumption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/energy_consumption"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue_text"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/light_gray_line"
+            android:layout_marginLeft="10dp"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

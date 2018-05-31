@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/shape_solid_white_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/blue_title"
+            android:gravity="center"
+            android:text="@string/popupwindow_modify_confirm"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_textSizePercent="5.8%w" />
+
+        <TextView
+            android:id="@+id/tv_show_detail"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/shape_stroke_gray"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="@string/popupwindow_modify_confirm_YES_OR_NO"
+            app:layout_textSizePercent="4.8%w"
+            android:textColor="@color/black"
+            app:layout_widthPercent="90%"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray_line" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvBindCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_scene_button_cancel"
+                android:textColor="@color/blue_text"
+                app:layout_textSizePercent="4.8%w" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/tvBindConfirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_scene_button_ok"
+                android:textColor="@color/blue_text"
+                app:layout_textSizePercent="4.8%w" />
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

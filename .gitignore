@@ -1,0 +1,9 @@
+build/
+build/*
+.gradle/
+.gradle/*
+.idea/
+.idea/*
+jiaweishi/build/
+*.iml
+local.properties

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="#2c9ae5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/shape_stroke_gray">
+
+                        <Spinner
+                            android:id="@+id/spGasYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvGasYear"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_circle_blue"
+                            android:gravity="center"
+                            android:text="@string/green_year"
+                            android:textColor="#128ce3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvGasMonth"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_circle_blue"
+                            android:gravity="center"
+                            android:text="@string/green_month"
+                            android:textColor="#128ce3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvGasDay"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_double_circle_blue"
+                            android:gravity="center"
+                            android:text="@string/green_day"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="#2c9ae5" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvGasYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvGasMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvGasDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/history_level_trend"
+                android:textColor="@color/blue_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvGasDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016年03月10日" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:background="@color/gray_line" />
+
+                <TextView
+                    android:id="@+id/tvChartRoomName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/have_used" />
+
+                <TextView
+                    android:id="@+id/tvGasQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cubic_metre_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cubic_metre_parenthesis" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lcGasHistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:minHeight="260dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

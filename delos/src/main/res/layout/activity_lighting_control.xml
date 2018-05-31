@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_popup_bg">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_heightPercent="@string/ivLightTop_percent_percent">
+
+        <ImageView
+            android:id="@+id/ivLightTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="80%"
+            app:layout_marginTopPercent="10%"
+            android:src="@drawable/ic_light_off_b"
+            android:layout_gravity="center"
+            />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#F8F8F8"-->
+        <!--android:text="@string/light_change"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="@color/gray_text"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:gravity="center_vertical"/>-->
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <!--<com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="40%"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivLightImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_live_light_open"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLightName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_text"
+                    android:text="灯1"/>
+
+                <ToggleButton
+                    android:id="@+id/tbLightSwitch"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    app:layout_marginLeftPercent="56%"
+                    android:textOn=""
+                    android:textOff=""
+                    android:background="@drawable/selector_toggle"
+                    android:checked="true" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+              <SeekBar
+                    android:id="@+id/sbLight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="80%"
+                    android:max="100"
+                    android:minHeight="16dp"
+                    android:progress="20"
+                    android:thumb="@drawable/ic_main_control" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>-->
+
+        <ListView
+            android:id="@+id/lvLightList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

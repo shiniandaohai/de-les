@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<com.boer.jiaweishi.view.camera.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"/>-->
+    <include
+        layout="@layout/layout_top_bar"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/dvlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

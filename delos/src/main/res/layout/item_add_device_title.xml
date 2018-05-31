@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!--    <View
+            android:id="@+id/viewSpace"
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>-->
+
+
+    <TextView
+        android:id="@+id/tvAddDeviceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="3日"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

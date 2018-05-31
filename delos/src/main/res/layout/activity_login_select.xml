@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="49%"
+            app:layout_marginLeftPercent="2.8%w"
+            app:layout_marginTopPercent="1.5%h"
+            app:layout_widthPercent="94.4%">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/login_select_first_title"
+                android:textColor="@color/black"
+                app:layout_heightPercent="10%"
+                app:layout_textSizePercent="7%" />
+
+            <ImageView
+                android:id="@+id/ivLoginSelectGateway"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_login_select_gateway"
+                app:layout_heightPercent="44.2%"
+                app:layout_marginBottomPercent="10%"
+                app:layout_marginTopPercent="18%"
+                app:layout_widthPercent="35.7%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/login_select_first_description"
+                android:textColor="@color/gray_text"
+                app:layout_heightPercent="20%"
+                app:layout_textSizePercent="5.5%" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/gray_line"
+            app:layout_heightPercent="2%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="49%"
+            app:layout_marginLeftPercent="2.8%w"
+            app:layout_marginTopPercent="1.5%h"
+            app:layout_widthPercent="94.4%">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/login_select_second_title"
+                android:textColor="@color/black"
+                app:layout_heightPercent="10%"
+                app:layout_textSizePercent="7%" />
+
+            <ImageView
+                android:id="@+id/ivLoginSelectFamilyApply"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_login_select_family_apply"
+                app:layout_heightPercent="44.2%"
+                app:layout_marginBottomPercent="10%"
+                app:layout_marginTopPercent="16.8%"
+                app:layout_widthPercent="35.7%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/login_select_second_description"
+                android:textColor="@color/gray_text"
+                app:layout_heightPercent="20%"
+                app:layout_paddingTopPercent="5%h"
+                app:layout_textSizePercent="5.5%" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

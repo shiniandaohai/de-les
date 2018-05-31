@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="320dp"
+                android:layout_height="180dp"
+                android:background="@drawable/shape_solid_white_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/edit_button"
+                    android:textColor="@color/gray_et_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etModelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_margin="18dp"
+                    android:background="@drawable/shape_stroke_gray"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_only_four"
+                    android:padding="8dp"
+                    android:textColor="@color/gray_et_text"
+                    android:textColorHint="@color/gray_et_hint"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/gray_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDisagree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/popup_scene_button_cancel"
+                        android:textColor="@color/blue_text_delos"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0.8dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_line" />
+
+                    <TextView
+                        android:id="@+id/tvAgree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/popup_scene_button_ok"
+                        android:textColor="@color/blue_text_delos"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:overScrollMode="always"
+         android:foregroundGravity="center"
+         android:layout_height="match_parent">
+         &lt;!&ndash;<com.zhy.android.percent.support.PercentFrameLayout
+             android:layout_width="match_parent"
+             android:layout_gravity="center_horizontal"
+             android:foregroundGravity="center"
+             android:layout_height="match_parent">&ndash;&gt;
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:background="@drawable/shape_solid_white_bg"
+                 app:layout_heightPercent="30%"
+                 app:layout_widthPercent="88%"
+                 app:layout_marginTopPercent="35%"
+                 app:layout_marginLeftPercent="6%"
+                 app:layout_marginRightPercent="6%"
+                 android:orientation="vertical">
+                 <TextView
+                     android:background="@color/blue_title"
+                     android:textStyle="bold"
+                     android:gravity="center"
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     app:layout_heightPercent="29%"
+                     android:textColor="@color/white"
+                     app:layout_textSizePercent="5%w"
+                     android:text="@string/edit_model_name"/>
+
+                 <EditText
+                     android:id="@+id/etModelName"
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:background="@drawable/shape_stroke_gray"
+                     android:gravity="center_vertical"
+                     android:hint="限4个字"
+                     android:padding="7dp"
+                     app:layout_heightPercent="23.5%"
+                     android:layout_margin="18dp"
+                     android:textColor="@color/gray_text"
+                     app:layout_textSizePercent="8.8%"
+                     app:layout_widthPercent="83.6%" />
+                 <View
+                     android:layout_marginTop="3dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="0.8dp"
+                     android:background="@color/gray_line" />
+                 <com.zhy.android.percent.support.PercentLinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     >
+
+
+                     <TextView
+                         android:id="@+id/tvDisagree"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:textColor="@color/blue_text"
+                         android:text="@string/popup_scene_button_cancel"
+                         app:layout_textSizePercent="4.8%w" />
+
+                     <View
+                         android:layout_width="0.8dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_line" />
+
+                     <TextView
+                         android:id="@+id/tvAgree"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:textColor="@color/blue_text"
+                         android:text="@string/popup_scene_button_ok"
+                         app:layout_textSizePercent="4.8%w" />
+
+
+                 </com.zhy.android.percent.support.PercentLinearLayout>
+
+             </LinearLayout>
+         &lt;!&ndash;</com.zhy.android.percent.support.PercentFrameLayout>&ndash;&gt;
+     </ScrollView>-->
+
+
+</LinearLayout>

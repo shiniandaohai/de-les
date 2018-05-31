@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/shape_solid_white_bg"
+        android:orientation="vertical"
+        app:layout_heightPercent="35%"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="25%"
+            android:gravity="center"
+            android:text="@string/home_apply_title"
+            android:textColor="@color/black"
+            app:layout_textSizePercent="5.5%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray_line" />
+
+        <TextView
+            android:id="@+id/tvHomeApplyContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="50%"
+            android:gravity="center_vertical"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            android:text="@string/home_apply_content"
+            android:textColor="@color/black"
+            app:layout_textSizePercent="5.5%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray_line" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="25%">
+
+
+            <TextView
+                android:id="@+id/tvHomeApplyDisagree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_apply_disagree_btn"
+                app:layout_textSizePercent="6%w" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/tvHomeApplyAgree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_apply_agree_btn"
+                app:layout_textSizePercent="6%w" />
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlBackups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivBackup"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_settings_backup"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:id="@+id/tvBackup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_marginRightPercent="5%"
+            android:layout_toRightOf="@id/ivBackup"
+            android:text="@string/setting_backup"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+        <TextView
+            android:id="@+id/tvBackupDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tvBackup"
+            android:text="@string/setting_backup_hint"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="25%h" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlRestore"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivRestore"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_settings_restore"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivRestore"
+            android:text="@string/setting_restore"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlGatewayUpgrade"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivGatewayUpgrade"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_settings_upgrade"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivGatewayUpgrade"
+            android:text="@string/setting_gateway_upgrade"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_login_more"
+            app:layout_heightPercent="40%h"
+            app:layout_marginRightPercent="3%"
+            app:layout_widthPercent="34%h" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlShockHint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivShockHint"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_settings_shock"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivShockHint"
+            android:text="@string/setting_shock_hint"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+        <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_widthPercent="@string/system_setting_toggle_parent_width"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--&gt;-->
+
+            <ToggleButton
+                android:id="@+id/tbShockHint"
+                android:layout_width="@dimen/system_setting_toggle_width"
+                android:layout_height="@dimen/system_setting_toggle_height"
+                android:background="@drawable/selector_shock_hint"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
+                app:layout_marginTopPercent="20%"
+                android:layout_alignParentRight="true"
+                app:layout_marginRightPercent="3%"
+                android:checked="true" />
+        <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlVoiceHint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivVoiceHint"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_settings_ringing"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivVoiceHint"
+            android:text="@string/setting_voice_hint"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_login_more"
+            app:layout_heightPercent="40%h"
+            app:layout_marginRightPercent="3%"
+            app:layout_widthPercent="34%h" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlHelpCenter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivHelpCenter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_settings_help"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivHelpCenter"
+            android:text="@string/setting_help_center"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_login_more"
+            app:layout_heightPercent="40%h"
+            app:layout_marginRightPercent="3%"
+            app:layout_widthPercent="34%h" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%">
+
+        <ImageView
+            android:id="@+id/ivAboutUs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher"
+            app:layout_heightPercent="60%h"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ivAboutUs"
+            android:text="@string/setting_about_us"
+            android:textColor="@color/gray_text"
+            app:layout_textSizePercent="30%h" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_login_more"
+            app:layout_heightPercent="40%h"
+            app:layout_marginRightPercent="3%"
+            app:layout_widthPercent="34%h" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

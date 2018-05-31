@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/weather_indoor"
+              android:orientation="vertical">
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/llayout_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+        <ImageView
+            android:id="@+id/id_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_nav_back_white"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:text="室内环境质量"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:textColor="@color/white"
+            android:textSize="90sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_temperature_value"
+            android:layout_marginBottom="13dp"
+            android:layout_toRightOf="@id/tv_temperature_value"
+            android:text="℃"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginBottom="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/text_weather_style"
+                android:text="AQI："
+                />
+
+            <TextView
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="湿度："
+                />
+
+            <TextView
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="PM25："
+                />
+
+            <TextView
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="PM10："
+                />
+
+            <TextView
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="TVOC："
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_aqi_value"
+                style="@style/text_weather_style"
+                tools:text="95%"
+                />
+
+            <TextView
+                android:id="@+id/tv_hum_value"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                tools:text="35"
+                />
+
+            <TextView
+                android:id="@+id/tv_pm25_value"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                tools:text="10"
+                />
+
+            <TextView
+                android:id="@+id/tv_pm10_value"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                tools:text="5"
+                />
+
+            <TextView
+                android:id="@+id/tv_tvoc_value"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                tools:text="0.8"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_aqi_level"
+                style="@style/text_weather_style"
+                tools:text="高"
+                />
+
+            <TextView
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="%"
+                />
+
+            <TextView
+                android:id="@+id/tv_CO_standard"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="μg/m3"
+                />
+
+            <TextView
+                android:id="@+id/tv_CO2_standard"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="μg/m3"
+                />
+
+            <TextView
+                android:id="@+id/tv_TVOC_standard"
+                style="@style/text_weather_style"
+                android:layout_marginTop="40dp"
+                android:text="mg/m3"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

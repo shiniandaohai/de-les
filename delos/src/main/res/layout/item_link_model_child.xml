@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- <com.zhy.android.percent.support.PercentFrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_marginLeftPercent="5%"
+        >
+
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="灯"
+            android:textColor="#000000"/>
+
+        <ToggleButton
+            android:id="@+id/tbItemSwitch"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="5%"
+            android:textOn=""
+            android:textOff=""
+            android:textColor="@color/common_bg"
+            android:background="@drawable/selector_toggle"
+            android:checked="false" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <!-- <com.zhy.android.percent.support.PercentLinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         app:layout_heightPercent="15%"
+         android:layout_weight="1"
+         android:gravity="center_vertical">
+app:layout_marginLeftPercent="56%"
+     <ImageView
+         android:id="@+id/ivLightOpen"
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         app:layout_widthPercent="12%"
+         android:layout_marginRight="10dp"
+         android:visibility="gone"
+         android:src="@drawable/ic_live_light_open"
+         />
+     </com.zhy.android.percent.support.PercentLinearLayout>
+
+ </com.zhy.android.percent.support.PercentFrameLayout>-->
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/sbLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            android:max="100"
+            android:minHeight="16dp"
+            android:progress="20"
+            android:visibility="gone"
+            android:thumb="@drawable/ic_main_control" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

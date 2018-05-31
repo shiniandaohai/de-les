@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_window_background"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_textCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_small_txt" />
+
+        <TextView
+            android:id="@+id/id_textSure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_small_txt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_linePickTime"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <include
+            layout="@layout/custom_datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

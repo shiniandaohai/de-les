@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pllScene"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="53%">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <com.example.colorarcprogressbarlibrary.main.ColorArcProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-15dp"
+                    app:back_width="5dp"
+                    app:circle_width="90dp"
+                    app:cirlcle_height="90dp"
+                    app:front_color1="@color/custom_progress_bar_color1"
+                    app:front_color2="@color/custom_progress_bar_color2"
+                    app:front_color3="@color/custom_progress_bar_color3"
+                    app:front_width="5dp"
+                    app:hint_size="12sp"
+                    app:is_need_content="true"
+                    app:is_need_unit="true"
+                    app:max_value="50"
+                    app:string_unit="@string/indoor"
+                    app:text_show_size="30sp"
+                    app:total_engle="270" />
+
+
+                <TextView
+                    android:id="@+id/tvOutdoorTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/temperature_num_margin"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@id/progressbar"
+                    android:textColor="@color/outdoor_text_color"
+                    app:layout_marginRightPercent="3%"
+                    app:layout_textSizePercent="1.6%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvOutdoorTemp"
+                    android:layout_marginRight="@dimen/temperature_num_margin"
+                    android:layout_toRightOf="@id/progressbar"
+                    android:text="@string/outdoor"
+                    android:textColor="@color/outdoor_text_color"
+                    app:layout_marginRightPercent="2.5%"
+                    app:layout_marginTopPercent="1%"
+                    app:layout_textSizePercent="2.1%w" />
+
+                <!--<FrameLayout
+                    android:id="@+id/flModelEdit"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/ic_model01"
+                        android:background="@drawable/shape_model_item_bg1"
+                        android:text="@string/model_text_1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginLeft="150dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/ic_model02"
+                        android:background="@drawable/shape_model_item_bg2"
+                        android:text="@string/model_text_2"
+                        android:padding="10dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginTop="120dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/ic_model03"
+                        android:background="@drawable/shape_model_item_bg3"
+                        android:text="@string/model_text_3"
+                        android:padding="10dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginTop="120dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/ic_model04"
+                        android:background="@drawable/shape_model_item_bg4"
+                        android:text="@string/model_text_4"
+                        android:padding="10dp"
+                        android:textColor="@color/white"/>
+                </FrameLayout>-->
+                <LinearLayout
+                    android:id="@+id/llModelEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-40dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivModel"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_living_room_model" />
+
+                    <TextView
+                        android:id="@+id/tvModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivModel"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/room_model"
+                        android:textColor="@color/outdoor_text_color"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/llModelEdit">
+
+                    <TextView
+                        android:id="@+id/tvHumidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/humidity"
+                        android:textColor="@color/outdoor_text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAirQuality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvHumidity"
+                        android:gravity="center_horizontal"
+                        android:text="@string/air_quality"
+                        android:textColor="@color/outdoor_text_color"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_heightPercent="46%"
+            app:layout_marginBottomPercent="1%">
+
+            <com.boer.jiaweishi.widget.MyGridView
+                android:id="@+id/gvLivingRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="4dp"
+                android:numColumns="2"
+                android:verticalSpacing="4dp"
+                app:layout_marginLeftPercent="1.3%"
+                app:layout_marginRightPercent="1.3%" />
+        </ScrollView>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

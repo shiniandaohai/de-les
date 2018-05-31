@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:paddingRight="15dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckedTextView
+                android:id="@+id/toggleButton1"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_toggle"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/tv_sin_1"
+                style="@style/text_style_2"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sin_sun"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <CheckedTextView
+                android:id="@+id/toggleButton2"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_toggle"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/tv_sin_2"
+                style="@style/text_style_2"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sin_muscle"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <CheckedTextView
+                android:id="@+id/toggleButton3"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_toggle"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/tv_sin_3"
+                style="@style/text_style_2"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sin_relax"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <CheckedTextView
+                android:id="@+id/toggleButton4"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_toggle"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/tv_sin_4"
+                style="@style/text_style_2"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sin_happy"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_light_adjust"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="80dp">
+
+        <TextView
+            style="@style/text_style"
+            android:text="@string/scene_adjust_brightness"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar_adjustLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/bg_seekbar_blue"
+            android:thumb="@drawable/circle_white"
+            android:thumbOffset="0dp" />
+    </LinearLayout>
+</LinearLayout>

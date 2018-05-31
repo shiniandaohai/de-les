@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pllScene"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.colorarcprogressbarlibrary.main.ColorArcProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="@dimen/ColorArcProgressBar_width"
+                    android:layout_height="@dimen/ColorArcProgressBar_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    app:back_width="15dp"
+                    app:front_color1="@color/custom_progress_bar_color1"
+                    app:front_color2="@color/custom_progress_bar_color2"
+                    app:front_color3="@color/custom_progress_bar_color3"
+                    app:front_width="15dp"
+                    app:is_need_content="true"
+                    app:is_need_unit="true"
+                    app:max_value="50"
+                    app:text_show_size="18sp"
+                    app:string_unit="@string/indoor"
+                    app:total_engle="270" />
+
+
+                <TextView
+                    android:id="@+id/tvOutdoorTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="35dp"
+                    android:textColor="@color/outdoor_text_color"
+                    app:layout_marginRightPercent="3%"
+                    app:layout_textSizePercent="4.9%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvOutdoorTemp"
+                    android:text="@string/outdoor"
+                    android:textColor="@color/outdoor_text_color"
+                    app:layout_marginRightPercent="2.5%"
+                    app:layout_marginTopPercent="1%"
+                    app:layout_textSizePercent="5.2%w" />
+
+                <LinearLayout
+                    android:id="@+id/llModelEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressbar"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_living_room_model" />
+
+                    <TextView
+                        android:id="@+id/tvModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivModel"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/room_model"
+                        android:textColor="@color/outdoor_text_color"
+                        app:layout_textSizePercent="3%w" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/llModelEdit">
+
+
+                    <LinearLayout
+                        android:id="@+id/rl_temp"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvHumidity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/outdoor_text_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvAirQuality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvHumidity"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/outdoor_text_color"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/rl_temp"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/humidity"
+                            android:textColor="@color/outdoor_text_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/air_quality"
+                            android:textColor="@color/outdoor_text_color"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+            <com.boer.delos.widget.MyGridView
+                android:id="@+id/gvLivingRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="4dp"
+                android:numColumns="2"
+                android:verticalSpacing="4dp"
+                app:layout_marginLeftPercent="1.3%"
+                app:layout_marginRightPercent="1.3%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

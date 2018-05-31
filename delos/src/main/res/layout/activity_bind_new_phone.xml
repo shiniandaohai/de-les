@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/ivCheckOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_one_green" />
+
+                <TextView
+                    android:id="@+id/tvCheckPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/ivCheckOne"
+                    android:gravity="center"
+                    android:text="@string/check_password"
+                    android:textColor="@color/btn_green"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tvCheckPassword"
+                    android:src="@drawable/ic_complete" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_next_green" />
+
+                <TextView
+                    android:id="@+id/tvCheckNewPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/bind_new_phone"
+                    android:textColor="@color/blue_btn_bg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/tvCheckNewPhone"
+                    android:text="②"
+                    android:textColor="@color/blue_btn_bg"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etNewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape_stroke_gray2"
+                android:hint="请输入新手机号"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/gray_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_stroke_gray2">
+
+                <EditText
+                    android:id="@+id/etVerificationCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/toast_input_code"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/gray_text"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/split_line_color"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvGetVerificationCode"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/register_get_verification_code"
+                    android:textColor="@color/blue_btn_bg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCommit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_blue_save"
+                android:gravity="center"
+                android:text="@string/retrieve_pass_commit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

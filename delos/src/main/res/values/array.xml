@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>Headings</item>
+        <item>Headings and Details</item>
+        <item>All Data</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="listSkin">
+        <item>额头</item>
+        <item>眼睛</item>
+        <item>手</item>
+        <item>左脸</item>
+        <item>鼻子</item>
+        <item>右脸</item>
+    </string-array>
+
+
+    <!--镭豆-->
+    <string-array name="aqi_des">
+        <item>优</item>
+        <item>良</item>
+        <item>轻度污染</item>
+        <item>中度污染</item>
+        <item>重度污染</item>
+        <item>严重污染</item>
+    </string-array>
+
+    <string-array name="aqi_color">
+        <item>#00ad60</item>
+        <item>#fdc50e</item>
+        <item>#f58320</item>
+        <item>#ed2d3c</item>
+        <item>#9d345f</item>
+        <item>#540839</item>
+    </string-array>
+
+
+    <string-array name="air_mode">
+        <item>离线模式</item>
+        <item>深度待机</item>
+        <item>睡眠模式</item>
+        <item>自动模式</item>
+        <item>手动控制</item>
+        <item>狂风模式</item>
+        <item>儿童场景</item>
+        <item>全天智能场景</item>
+        <item>设备关机</item>
+        <item></item>
+    </string-array>
+
+
+    <!--Co2-->
+    <string-array name="co2_grade">
+        <item>优</item>
+        <item>呼吸顺畅</item>
+        <item>空气清新</item>
+        <item>空气浑浊</item>
+        <item>缺氧</item>
+    </string-array>
+
+    <!--VOC-->
+    <string-array name="voc_grade">
+        <item>好</item>
+        <item>一般</item>
+        <item>中</item>
+        <item>差</item>
+        <item>超标</item>
+    </string-array>
+
+
+</resources>

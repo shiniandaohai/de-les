@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_remote_ctrl_item_height"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/icDeviceType"
+        android:layout_width="@dimen/activity_remote_ctrl_icon_width"
+        android:layout_height="@dimen/activity_remote_ctrl_icon_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_circle_air_condition" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvDeviceTypeName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/activity_remote_ctrl_item_height"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/icRight"
+        android:scaleType="centerInside"
+        android:layout_width="@dimen/activity_remote_ctrl_icon_width"
+        android:layout_height="@dimen/activity_remote_ctrl_icon_height"
+        android:src="@drawable/ic_remote_right_arrow" />
+
+</LinearLayout>
+
+
+

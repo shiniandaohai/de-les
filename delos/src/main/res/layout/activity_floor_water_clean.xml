@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/green_water"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_info"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_floor_water_filter"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:id="@+id/tv_raw_TDS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_raw_TDS"
+                            android:layout_marginTop="-5dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/text_water_raw"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_water_quality"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_raw_quality"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="5dp"
+                                android:text="@string/text_good"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_clean_TDS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_raw_TDS"
+                            android:layout_marginTop="-5dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/text_water_clean"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_1"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_water_quality"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_clean_quality"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="5dp"
+                                android:text="@string/text_good"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp"
+                android:layout_alignParentBottom="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_shortage_state"
+                        style="@style/text_weather_style"
+                        android:text="@string/text_normal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/text_weather_style"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/state_water_shortage"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_leakage_state"
+                        style="@style/text_weather_style"
+                        android:text="@string/text_normal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/text_weather_style"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/state_water_leakage"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_flush_state"
+                        style="@style/text_weather_style"
+                        android:text="@string/text_auto_flush"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/text_weather_style"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/state_flush_state"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_filter_residual1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_floor_filter_4"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_filter_cartridge1"
+                    android:textColor="@color/gray_et_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_filter_residual2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_floor_filter_3"
+                    android:gravity="center"
+                    android:text="75%"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_filter_cartridge2"
+                    android:textColor="@color/gray_et_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_filter_residual3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_floor_filter_2"
+                    android:gravity="center"
+                    android:text="50%"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_filter_cartridge3"
+                    android:textColor="@color/gray_et_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_filter_residual4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_floor_filter_0"
+                    android:gravity="center"
+                    android:text="@string/replace_filter_cartridge"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_filter_cartridge4"
+                    android:textColor="@color/gray_et_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvItemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="环境检测器"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:background="#F8F8F8"/>
+
+    <LinearLayout
+        android:id="@+id/llAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:background="#00000000"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvItemLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="报警："
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivBlackPoint"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/shape_black_point"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/ivRedPoint"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/shape_dark_red_point"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPM"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PM2.5："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvPMValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ug/m³"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHumid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="湿度："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvHumid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTemp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="温度："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="°C"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFormalin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="甲醛："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvFormalin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="mg/m³"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOxygen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="氧气："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvOxygen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCarbon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="二氧化碳："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvCarbon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ppm"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="一氧化碳："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvCO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ppm"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCH4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="甲烷："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvCH4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ppm"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llConcentration"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="浓度："
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvConcentration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ppm"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line" />
+    </LinearLayout>
+
+</LinearLayout>

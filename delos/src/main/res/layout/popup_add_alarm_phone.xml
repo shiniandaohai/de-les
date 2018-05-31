@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/shape_solid_white_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/blue_btn_bg"
+            android:gravity="center"
+            android:text="@string/add_alarm_phone"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_textSizePercent="5.8%w" />
+
+        <EditText
+            android:id="@+id/etAlarmPhone"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="18dp"
+            android:background="@drawable/shape_stroke_gray"
+            android:hint="@string/input_alarm_phone"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textColorHint="@color/gray_text"
+            app:layout_textSizePercent="4.8%w"
+            app:layout_widthPercent="90%" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray_line" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvAlarmPhoneCancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_scene_button_cancel"
+                android:textColor="@color/gray_et_hint"
+                app:layout_textSizePercent="4.8%w" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/tvAlarmPhoneConfirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popup_scene_button_ok"
+                android:textColor="@color/blue_btn_bg"
+                app:layout_textSizePercent="4.8%w" />
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

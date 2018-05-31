@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mall_homeairclean">全屋空气净化系统</string>
+    <string name="mall_airclean">空气净化器</string>
+    <string name="mall_radium">镭豆</string>
+    <string name="mall_aromatherapy">天然香薰</string>
+    <string name="mall_homewaterclean">全宅净化水系统</string>
+    <string name="mall_tableclean">台上净水</string>
+    <string name="mall_floorclean">台下净水</string>
+    <string name="mall_phythmlight">节律灯</string>
+    <string name="mall_energylight">能量灯镜</string>
+    <string name="mall_smartmirror">智能镜</string>
+    <string name="mall_mattress">记忆床垫</string>
+    <string name="mall_indoorcurtain">室内遮光窗帘</string>
+    <string name="mall_outdoorcurtain">室外遮光窗帘</string>
+    <string name="mall_nightlight">夜灯</string>
+</resources>

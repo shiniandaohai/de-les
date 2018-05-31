@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/layout_top_bar" />
+
+        <TextView
+            android:id="@+id/tvBlood"
+            android:layout_below="@+id/include"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:text="血压"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_alignBottom="@+id/tvBlood"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tvBlood"
+            android:layout_width="wrap_content"
+            android:text="mmHg"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_alignLeft="@+id/tvBlood"
+            android:layout_below="@+id/tvBlood"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="@string/blood_belong"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/llMiddle"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#FF3000"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/blood_press_danchun"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#FF3000"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/blood_press_num_dan"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#DC2C1A"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/third_blood_press"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#DC2C1A"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/high_blood_180"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#E26F50"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/second_blood_press"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#E26F50"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/high_blood_179"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#E48A68"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/first_blood_press"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#E48A68"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/high_blood_159"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#E58B74"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/normal_value"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#E58B74"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/high_blood_139"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#4CAD10"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/normal_blood_press"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#4CAD10"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/high_blood_120"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#E3960F"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/low_blood_press"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#E3960F"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/high_blood_90"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_below="@+id/llMiddle"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/blood_press_tip"
+            android:textColor="#999"
+            android:textSize="14sp" />
+
+        <View
+            style="@style/common_separate_line"
+            android:id="@+id/view"
+            android:layout_below="@+id/tvTip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvHeartP"
+            android:layout_below="@+id/view"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:text="@string/heart_precent"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_alignBottom="@+id/tvHeartP"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tvHeartP"
+            android:layout_width="wrap_content"
+            android:text="mmHg"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvBelong2"
+            android:layout_alignLeft="@+id/tvHeartP"
+            android:layout_below="@+id/tvHeartP"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/blood_belong"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_below="@+id/tvBelong2"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#FF3000"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/heart_fast"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#FF3000"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/over100"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#4CAD10"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/normal_heart"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#4CAD10"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/below_100"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="#E3960F"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:text="@string/heat_slow"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:background="#E3960F"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:text="@string/below_60"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

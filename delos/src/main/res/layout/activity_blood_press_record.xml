@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/white"
+                                                     android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_heightPercent="60%"
+                    app:layout_widthPercent="30%">
+
+                    <TextView
+                        android:id="@+id/etStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:textColor="@color/gray_text"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#898989"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/date_to"
+                    android:textColor="@color/gray_text"
+                    android:textSize="18sp"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_heightPercent="60%"
+                    app:layout_widthPercent="30%">
+
+                    <TextView
+                        android:id="@+id/etEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:textColor="@color/gray_text"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#898989"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+                android:id="@+id/exBloodPressRecord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/transparent"
+                android:dividerPadding="0dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:showDividers="none"
+                android:smoothScrollbar="true"
+                app:ptrShowIndicator="false"
+                />
+
+            <TextView
+                android:id="@+id/text_fail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/text_query_fail"
+                android:visibility="gone"
+                />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

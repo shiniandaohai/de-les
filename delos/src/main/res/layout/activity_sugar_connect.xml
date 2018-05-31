@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.boer.delos.widget.CircleProgressBarView
+        android:id="@+id/circleProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circleProgressBar"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_eat_before"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <CheckedTextView
+                android:id="@+id/ctv_before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_circle_check"
+                android:checked="true" />
+
+            <TextView
+                style="@style/text_style"
+                android:paddingLeft="10dp"
+                android:text="@string/blood_sugar_eat_before"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_eat_after"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <CheckedTextView
+                android:id="@+id/ctv_after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_circle_check"
+                android:checked="false"
+
+                />
+
+            <TextView
+                style="@style/text_style"
+                android:paddingLeft="10dp"
+                android:text="@string/blood_sugar_eat_after"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_measure_done"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_below="@id/ll_1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/text_style_2"
+                android:paddingTop="20dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                style="@style/text_style_2"
+                android:layout_alignParentRight="true"
+                android:paddingTop="20dp"
+                android:text=""
+                android:textColor="@color/blue_text_water"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_blood_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minWidth="30dp"
+                android:text=" "
+                android:textColor="@color/gray_et_text"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_blood_sugar"
+                android:layout_marginBottom="6dp"
+                android:layout_toRightOf="@id/tv_blood_sugar"
+                android:lines="1"
+                android:minWidth="60dp"
+                android:text="@string/blood_sugar_unit"
+                android:textColor="@color/gray_et_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_sugar_standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/health_standard_blue" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_result"
+        android:background="@color/split_line_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_measure_again"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_blue_stoke_full"
+            android:text="@string/text_measure_again"
+            android:textColor="@color/gray_et_text"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_save_data"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_blue_stoke_full"
+            android:checked="true"
+            android:text="@string/text_save_data"
+            android:textColor="@color/gray_et_text"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

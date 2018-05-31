@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="800dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/blue_title"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPopupTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="@string/popup_scene_edit_title"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gvScencePopup"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:background="@color/white"
+                android:numColumns="3" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlPopupScenceName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/etPopupScenceCustomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/popup_scene_custom_name"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="240dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/etPopupScenceCustomName"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gray_line" />
+
+            </RelativeLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvScenceEditPopupCancle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_popup_scence_btn_cancle_bg"
+                    android:gravity="center"
+                    android:text="@string/popup_scene_button_cancel"
+                    android:textColor="@color/blue_text" />
+
+                <TextView
+                    android:id="@+id/tvScenceEditPopupOk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_popup_scence_btn_ok_bg"
+                    android:gravity="center"
+                    android:text="@string/popup_scene_button_ok"
+                    android:textColor="@color/blue_text" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

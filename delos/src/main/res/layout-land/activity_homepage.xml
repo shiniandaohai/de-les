@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boer.jiaweishi.view.MySlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dlHomepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main">
+
+    <!-- homepage side slip start -->
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 侧滑的上半部分 -->
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_heightPercent="62.5%"
+                app:layout_marginTopPercent="6.25%">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    app:layout_heightPercent="5.75%"
+                    app:layout_marginBottomPercent="3.25%"
+                    app:layout_textSizePercent="4%h" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/llSideSlipComfortLive"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_heightPercent="22.75%">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_homepage_sideslip_comfort_live"
+                        app:layout_heightPercent="58.5%"
+                        app:layout_marginBottomPercent="4.4%"
+                        app:layout_widthPercent="40%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/homepage_comfort_live"
+                        android:textColor="@color/white"
+                        app:layout_heightPercent="17.3%"
+                        app:layout_textSizePercent="14.3%h" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/llSideSlipSecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_heightPercent="22.75%">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_homepage_sideslip_security"
+                        app:layout_heightPercent="58.5%"
+                        app:layout_marginBottomPercent="4.4%"
+                        app:layout_widthPercent="40%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/homepage_home_security"
+                        android:textColor="@color/white"
+                        app:layout_heightPercent="17.3%"
+                        app:layout_textSizePercent="14.3%h" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/llSideSlipHealthLive"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_heightPercent="22.75%">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_homepage_sideslip_health_live"
+                        app:layout_heightPercent="58.5%"
+                        app:layout_marginBottomPercent="4.4%"
+                        app:layout_widthPercent="40%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/homepage_health_live"
+                        android:textColor="@color/white"
+                        app:layout_heightPercent="17.3%"
+                        app:layout_textSizePercent="14.3%h" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/llSideSlipAddBatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_heightPercent="22.75%">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_homepage_sideslip_green_live"
+                        app:layout_heightPercent="58.5%"
+                        app:layout_marginBottomPercent="4.4%"
+                        app:layout_widthPercent="40%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/homepage_green_live"
+                        android:textColor="@color/white"
+                        app:layout_heightPercent="17.3%"
+                        app:layout_textSizePercent="14.3%h" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <!-- 侧滑的上半部分end -->
+
+            <!-- 侧滑的下半部分start -->
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="30.625%"
+                app:layout_marginBottomPercent="0.625%">
+
+                <!-- 左侧start -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="50%">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llSideSlipHomepage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="33%">
+
+                        <ImageView
+                            android:id="@+id/id_imageViewHomeOrQR"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_homepage_sideslip_homepage"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="10%"
+                            app:layout_widthPercent="40%" />
+
+                        <TextView
+                            android:id="@+id/id_textViewHomeOrQR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/homepage_text"
+                            android:textColor="@color/white"
+                            app:layout_heightPercent="30%"
+                            app:layout_marginTopPercent="9%"
+                            app:layout_textSizePercent="18%h" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/white" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llSideSlipAreaManage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="33%">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_homepage_sideslip_area_manage"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="20%"
+                            app:layout_widthPercent="40%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/homepage_area_manage"
+                            android:textColor="@color/white"
+                            app:layout_heightPercent="30%"
+                            app:layout_marginTopPercent="9%"
+                            app:layout_textSizePercent="18%h" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/white" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llSideSlipLinkageManage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="33%">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_homepage_sideslip_linkage_manage"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="20%"
+                            app:layout_widthPercent="40%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/homepage_link_manage"
+                            android:textColor="@color/white"
+                            app:layout_heightPercent="30%"
+                            app:layout_marginTopPercent="9%"
+                            app:layout_textSizePercent="18%h" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <!-- 左侧end -->
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <!-- 右侧start -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="50%">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llSideSlipDeviceManage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="33%">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_homepage_sideslip_device_manage"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="10%"
+                            app:layout_widthPercent="40%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/homepage_device_manage"
+                            android:textColor="@color/white"
+                            app:layout_heightPercent="30%"
+                            app:layout_marginTopPercent="9%"
+                            app:layout_textSizePercent="18%h" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/white" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llSideSlipAreaSystemSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="33%">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_homepage_sideslip_system_settings"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="20%"
+                            app:layout_widthPercent="40%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/homepage_system_settings"
+                            android:textColor="@color/white"
+                            app:layout_heightPercent="30%"
+                            app:layout_marginTopPercent="9%"
+                            app:layout_textSizePercent="18%h" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/white" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llSideSlipPersonalCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_heightPercent="33%">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_homepage_sideslip_personal_center"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="20%"
+                            app:layout_widthPercent="40%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/homepage_personal_center"
+                            android:textColor="@color/white"
+                            app:layout_heightPercent="30%"
+                            app:layout_marginTopPercent="9%"
+                            app:layout_textSizePercent="18%h" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <!-- 右侧end -->
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <!-- 侧滑的下半部分end -->
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <!-- homepage side slip end -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_top_bar" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="65.99%h">
+                    <!-- comfort live -->
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:layout_widthPercent="74.6%w">
+
+                        <com.zhy.android.percent.support.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ic_homepage_bg"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:text="@string/homepage_comfort_live"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_heightPercent="9%"
+                                    app:layout_marginLeftPercent="2.8%"
+                                    app:layout_marginTopPercent="4.0%"
+                                    app:layout_textSizePercent="6.8%" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v4.view.ViewPager
+                                        android:id="@+id/vpComfortLive"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/linearlayout_dot"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="15dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_marginBottom="1dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:id="@+id/llApplyAnnotation"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="bottom"
+                                android:background="#c6919191"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                app:layout_heightPercent="20%">
+
+                                <TextView
+                                    android:id="@+id/tvApplyMessage"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="12121212121拒绝了您的申请"
+                                    android:textColor="@color/white"
+                                    app:layout_paddingLeftPercent="2%"
+                                    app:layout_textSizePercent="36%" />
+
+                                <TextView
+                                    android:id="@+id/tvApplyCancel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="取消"
+                                    android:textColor="@color/white"
+                                    app:layout_textSizePercent="36%"
+                                    app:layout_widthPercent="20%" />
+
+                                <TextView
+                                    android:id="@+id/tvApplyAgain"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="重新申请"
+                                    android:textColor="@color/white"
+                                    app:layout_textSizePercent="36%"
+                                    app:layout_widthPercent="20%" />
+
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                            <com.zhy.android.percent.support.PercentFrameLayout
+                                android:id="@+id/flGatewayHint"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/gateway_hint_message_color"
+                                android:visibility="gone">
+
+                                <com.zhy.android.percent.support.PercentLinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    app:layout_heightPercent="13%">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:src="@drawable/ic_living_room_error" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="@string/gateway_hint_message" />
+                                </com.zhy.android.percent.support.PercentLinearLayout>
+                            </com.zhy.android.percent.support.PercentFrameLayout>
+                        </com.zhy.android.percent.support.PercentFrameLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                    <!-- comfort live -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_line"
+                        app:layout_widthPercent="0.8%w" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_widthPercent="24.7%w">
+
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:id="@+id/rlHomepagePushMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/cBanner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@mipmap/ic_product_default_ipad"
+                                app:canLoop="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/llIndicator"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="30dip"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" />
+                            </LinearLayout>
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@color/gray_line"
+                            app:layout_heightPercent="3.03%w" />
+                        <!--家庭安全-->
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:id="@+id/llHomepageHomeSecurity"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/homepage_home_security"
+                                android:textColor="@color/blue_text"
+                                app:layout_marginTopPercent="5.7%"
+                                app:layout_textSizePercent="10%" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_homepage_security"
+                                app:layout_heightPercent="50%"
+                                app:layout_marginTopPercent="20%"
+                                app:layout_widthPercent="40%" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+                        <!--家庭安全-->
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/gray_line"
+                    app:layout_heightPercent="0.8%w" />
+                <!--下半部分开始-->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="32%"
+                    app:layout_marginBottomPercent="0.58%">
+                    <!-- health live -->
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/pllHealth"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_widthPercent="49.8%w">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:text="@string/homepage_health_live"
+                            android:textColor="@color/blue_text"
+                            app:layout_heightPercent="11.4%"
+                            app:layout_marginBottomPercent="3.1%"
+                            app:layout_marginLeftPercent="2.8%"
+                            app:layout_marginTopPercent="4.6%"
+                            app:layout_textSizePercent="9.5%" />
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="84%">
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                app:layout_widthPercent="33.2%">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_homepage_blood_glucose"
+                                    app:layout_heightPercent="55%"
+                                    app:layout_marginTopPercent="8%"
+                                    app:layout_widthPercent="35%" />
+
+                                <TextView
+                                    android:id="@+id/tvHomepageBloodGlucose"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/homepage_blood_glucose"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_marginTopPercent="7%"
+                                    app:layout_textSizePercent="10%" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/homepage_blood_glucose_value"
+                                    android:textColor="@color/gray_text"
+                                    app:layout_textSizePercent="10%" />
+
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                            <View
+                                android:layout_width="0.8dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_line" />
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                app:layout_widthPercent="33.5%">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_homepage_blood_pressure"
+                                    app:layout_heightPercent="50%"
+                                    app:layout_marginTopPercent="8%"
+                                    app:layout_widthPercent="50%" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/homepage_blood_pressure"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_marginTopPercent="12%"
+                                    app:layout_textSizePercent="10%" />
+
+                                <TextView
+                                    android:id="@+id/tvHomepageBloodPressure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/homepage_blood_pressure_value"
+                                    android:textColor="@color/gray_text"
+                                    app:layout_textSizePercent="10%" />
+
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                            <View
+                                android:layout_width="0.8dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_line" />
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                app:layout_widthPercent="33.2%">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_homepage_weight"
+                                    app:layout_heightPercent="40%"
+                                    app:layout_marginTopPercent="12%"
+                                    app:layout_widthPercent="50%" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/homepage_weight"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_marginTopPercent="18%"
+                                    app:layout_textSizePercent="10%" />
+
+                                <TextView
+                                    android:id="@+id/tvHomepageWeight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/homepage_weight_value"
+                                    android:textColor="@color/gray_text"
+                                    app:layout_textSizePercent="10%" />
+
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                    <!-- health live -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_line"
+                        app:layout_widthPercent="0.8%w" />
+                    <!-- green live -->
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:layout_widthPercent="24.1%w">
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:id="@+id/pllGreenLive"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/homepage_green_live"
+                                android:textColor="@color/blue_text"
+                                app:layout_marginLeftPercent="7%"
+                                app:layout_marginTopPercent="5.7%"
+                                app:layout_textSizePercent="10%" />
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                app:layout_heightPercent="15%"
+                                app:layout_paddingLeftPercent="7%">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/homepage_electricity"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_textSizePercent="70%" />
+
+                                <TextView
+                                    android:id="@+id/tvHomepageCurrentPower"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/homepage_current_power"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_marginLeftPercent="7%"
+                                    app:layout_textSizePercent="50%" />
+
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvHomepageElectricityDegree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/homepage_degrees"
+                                android:textColor="@color/blue_text"
+                                app:layout_textSizePercent="8%" />
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/bcGreen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                    <!-- green live -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_line"
+                        app:layout_widthPercent="0.8%w" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llHomepageIntelligentLock"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:layout_widthPercent="24.1%w">
+                        <!--智能门锁-->
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:id="@+id/rlHomepageIntelligentLock"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/homepage_intelligent_lock"
+                                android:textColor="@color/blue_text"
+                                app:layout_marginLeftPercent="7%"
+                                app:layout_marginTopPercent="5.7%"
+                                app:layout_textSizePercent="10%" />
+
+                            <ImageView
+                                android:id="@+id/iv_lock"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_homepage_lock_close_land"
+                                app:layout_heightPercent="25%h"
+                                app:layout_marginRightPercent="6%h"
+                                app:layout_marginTopPercent="6%h"
+                                app:layout_widthPercent="25%h" />
+
+                            <!--指纹解锁 指纹-->
+                            <com.zhy.android.percent.support.PercentRelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/ic_homepage_fingerprint_square"
+                                app:layout_heightPercent="60%h"
+                                app:layout_marginTopPercent="30%h"
+                                app:layout_widthPercent="60%h">
+
+                                <ImageView
+                                    android:id="@+id/iv_fingerprint_lock_dot"
+                                    android:layout_width="3dp"
+                                    android:layout_height="3dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/circle_unselect" />
+
+                                <ImageView
+                                    android:id="@+id/iv_fingerprint_lock"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/bg_homepage_fingerprint_lock"
+                                    app:layout_heightPercent="80%"
+                                    app:layout_widthPercent="80%" />
+
+                            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+                        <!--天气预报-->
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:id="@+id/rlHomepageWeatherInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_weather_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/homepage_weather_info"
+                                android:textColor="@color/blue_text"
+                                app:layout_marginLeftPercent="7%"
+                                app:layout_marginTopPercent="5.7%"
+                                app:layout_textSizePercent="10%" />
+
+                            <TextView
+                                android:id="@+id/tv_weather_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center"
+                                android:text="小雨"
+                                android:textColor="@color/blue_text"
+                                app:layout_marginRightPercent="7%"
+                                app:layout_marginTopPercent="5.7%"
+                                app:layout_textSizePercent="10%" />
+
+                            <ImageView
+                                android:id="@+id/iv_weather_pic"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_homepage_lock_close_land"
+                                app:layout_heightPercent="60%h"
+                                app:layout_marginTopPercent="17.7%"
+                                app:layout_widthPercent="60%h" />
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tv_weather"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:gravity="center"
+                                    android:text="哈哈"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_textSizePercent="9%" />
+
+                                <TextView
+                                    android:id="@+id/tv_weather_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="1dp"
+                                    android:gravity="center"
+                                    android:text="2016"
+                                    android:textColor="@color/blue_text"
+                                    app:layout_textSizePercent="7%" />
+                            </com.zhy.android.percent.support.PercentLinearLayout>
+
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <!-- bottom button -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#128CE3"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_heightPercent="10%">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/llHomepageModelSelect"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_widthPercent="50%">
+
+                        <ImageView
+                            android:id="@+id/ivModelSelect"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_homepage_model_selection"
+                            app:layout_heightPercent="40%"
+                            app:layout_widthPercent="20%" />
+
+                        <TextView
+                            android:id="@+id/tvModelSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/homepage_model_select"
+                            android:textColor="@color/white"
+                            app:layout_textSizePercent="30%" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <!-- bottom button -->
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </RelativeLayout>
+</com.boer.jiaweishi.view.MySlidingMenu>

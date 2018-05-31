@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        >
+
+        <CheckedTextView
+            android:id="@+id/tv_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:drawableLeft="@drawable/bg_checkbox"
+            android:gravity="center"
+            android:text="@string/select_all" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共 "
+                android:textColor="@color/black_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_device_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/btn_green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 个设备"
+                android:textColor="@color/black_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="暂未发现新设备"
+        android:gravity="center"
+        android:visibility="invisible"
+        />
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/listView_addBatch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@color/transparent"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_green_refresh_again"
+            android:text="@string/refresh_again"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_blue_save"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

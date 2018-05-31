@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flMonitorPic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivMonitorPic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        android:src="@drawable/ic_gateway_bind_wifilink"
+        />
+
+    <ImageView
+        android:id="@+id/ivMonitorPicChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_monitor_picture_checked"
+        android:layout_gravity="bottom|right"
+        />
+
+
+</com.zhy.android.percent.support.PercentFrameLayout>

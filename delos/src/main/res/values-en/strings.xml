@@ -1,0 +1,906 @@
+<resources>
+    <string name="app_name">By Delos</string>
+    <string name="toast_error_net">网络不给力，请检查网络</string>
+    <string name="link_time_out">连接超时，请重试</string>
+    <string name="account_setting">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="permission_hint_default">如果该没有权限，将影响您的正常使用</string>
+
+    <string name="progress_login">正在登录中，请稍候...</string>
+    <string name="progress_loading">数据加载中</string>
+    <string name="progress_register">正在注册中，请稍候...</string>
+    <string name="progress_request">数据加载中...</string>
+    <string name="progress_loading_pic">图片加载中</string>
+    <string name="progress_uploading">正在上传，请稍候...</string>
+    <string name="progress_downloading">正在下载，请稍候...</string>
+    <string name="progress_public">正在发布，请稍候...</string>
+    <string name="progress_auth">正在授权，请稍候...</string>
+
+    <!-- 登录页 -->
+    <string name="login_username_hint">手机号</string>
+    <string name="login_password_hint">密\t\t\t码</string>
+    <string name="login_btn_text">登\t\t录</string>
+    <string name="login_register">注册</string>
+    <string name="login_error_text">登录遇到的问题？</string>
+    <string name="login_show_declare">版权所有：博耳智能家居？</string>
+
+    <!-- 注册 -->
+    <string name="register_title_text">注册</string>
+    <string name="register_phone">手机号：</string>
+    <string name="register_verification_code">验证码：</string>
+    <string name="register_get_verification_code">获取验证码</string>
+    <string name="register_password">密码：</string>
+    <string name="register_pass_description">密码由6-16位字符组成，区分大小写</string>
+    <string name="register_already_read">我已阅读</string>
+    <string name="register_use_protocol">《用户协议》</string>
+    <string name="register_btn_text">注\t册</string>
+    <string name="title_Agreement">用户协议</string>
+    <string name="register_success">注册成功</string>
+    <string name="password_mode">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-!@#$%*&amp;</string>
+
+    <!-- 登录遇到问题 -->
+    <string name="login_error_title_text">登录遇到问题</string>
+    <string name="login_error_retrieve_pass">密码找回</string>
+    <string name="login_error_service_phone">客服电话：400-802-0253</string>
+
+    <!-- 手机找回密码 -->
+    <string name="retrieve_pass_title_text">手机密码找回</string>
+    <string name="retrieve_pass_phone">请填写您注册的手机号</string>
+    <string name="retrieve_pass_verification_code">验证码</string>
+    <string name="retrieve_pass_send_again">重新发送</string>
+    <string name="retrieve_pass_commit">提交</string>
+
+    <!-- 重置密码 -->
+    <string name="reset_pass_title_text">重置密码</string>
+    <string name="reset_pass_old_pass">旧密码</string>
+    <string name="reset_pass_new_pass">新密码</string>
+    <string name="reset_pass_description">密码由6-16位字符组成，区分大小写</string>
+    <string name="reset_pass_confirm">确定</string>
+    <string name="reset_input_pass">请输入新密码</string>
+
+    <!-- 选择登录 -->
+    <string name="login_select_title">选择登录</string>
+    <string name="login_select_first_title">主机直连登录</string>
+    <string name="login_select_first_description">主机直连登录请确保手机与主机在同一局域网</string>
+    <string name="login_select_second_title">家人申请登录</string>
+    <string name="login_select_second_description">通过家人注册的手机号发送申请登录</string>
+
+    <!-- 首页 -->
+    <string name="homepage_lalala">啦啦啦</string>
+    <string name="homepage_comfort_live">舒适生活</string>
+    <string name="homepage_home_security">家庭安全</string>
+    <string name="homepage_health_live">健康生活</string>
+    <string name="homepage_green_live">绿色生活</string>
+    <string name="homepage_batch_add">批量添加</string>
+    <string name="homepage_text">首页</string>
+    <string name="homepage_device_manage">设备管理</string>
+    <string name="homepage_area_manage">区域管理</string>
+    <string name="homepage_system_settings">系统设置</string>
+    <string name="homepage_link_manage">联动管理</string>
+    <string name="homepage_personal_center">个人中心</string>
+    <string name="homepage_blood_pressure">血压</string>
+    <string name="homepage_blood_glucose">血糖</string>
+    <string name="homepage_weight">体重</string>
+    <string name="homepage_blood_glucose_value">mmol/L</string>
+    <string name="homepage_blood_pressure_value">mmHg</string>
+    <string name="homepage_weight_value">kg</string>
+    <string name="homepage_electricity">电</string>
+    <string name="homepage_current_power">当前功率：%skw</string>
+    <string name="homepage_now">当前</string>
+    <string name="homepage_degrees">%s度</string>
+    <string name="homepage_packaging">惊喜正在包装中...</string>
+    <string name="homepage_model_select">模式选择</string>
+    <string name="homepage_intelligent_lock">智能门锁</string>
+    <string name="homepage_kitchen">厨房</string>
+    <string name="homepage_study">书房</string>
+    <string name="homepage_tea_room">茶水房</string>
+    <string name="homepage_dining_room">餐厅</string>
+    <string name="homepage_sick_room">病房</string>
+    <string name="homepage_office">办公室</string>
+    <string name="homepage_add"></string>
+    <string name="home_apply_title">家人申请</string>
+    <string name="home_apply_content">您是否通过家人%s的控制申请</string>
+    <string name="home_apply_disagree_btn">不同意</string>
+    <string name="home_apply_agree_btn">同意</string>
+
+    <string name="push_message_title">消息推送</string>
+
+    <string name="gateway_hint_message">当前主机不可用，请检查主机状态</string>
+    <string name="no_permission">你没有此权限，请联系主机管理员</string>
+    <string name="gas_test_title">气体检测</string>
+
+    <string name="scan_hint">请将设备和手机连接在一个路由器下</string>
+    <!-- 模式选择 -->
+    <string name="model_select_gohome">回家</string>
+    <string name="model_select_meet_visitor">会客模式</string>
+    <string name="model_select_leave_home">离家</string>
+    <string name="model_select_dinner">就餐模式</string>
+    <string name="model_select_undefence">撤防模式</string>
+    <string name="model_select_defence">布防模式</string>
+
+    <!-- 主机绑定 -->
+    <string name="gateway_bind_hint">确保手机和主机在同一局域网下</string>
+    <string name="bind_wifi_link_name">主机绑定</string>
+    <string name="gateway_popup_title">温馨提示</string>
+    <string name="gateway_popup_content">是否向主机管理员%s申请</string>
+    <string name="gateway_popup_cancel">取消</string>
+    <string name="gateway_popup_apply">申请</string>
+
+    <!-- 家人申请登录 -->
+    <string name="family_apply_phone_hint">管理员手机号</string>
+    <string name="family_apply_contact_btn">通讯录</string>
+    <string name="family_apply_content_hint">不说些什么吗</string>
+    <string name="family_apply_send_btn">发送申请</string>
+
+    <!-- 区域管理-->
+    <string name="scene_manage">区域管理</string>
+    <string name="room_manage">房间管理</string>
+    <string name="scene_manage_auto"> auto </string>
+    <string name="scene_manage_office">办公室</string>
+    <string name="scene_manage_tearoom">茶水间</string>
+    <string name="scene_manage_diningroom"> 餐厅 </string>
+    <string name="scene_manage_add"> 添加 </string>
+    <string name="living_room"> 客厅 </string>
+    <string name="master_bedroom"> 主卧 </string>
+    <string name="bedroom"> 次卧 </string>
+    <string name="kitchen"> 厨房 </string>
+    <string name="study"> 书房 </string>
+    <string name="dining_room"> 餐厅 </string>
+    <string name="bath_room"> 卫生间 </string>
+    <string name="office"> 办公室 </string>
+    <string name="tea_room"> 茶水间 </string>
+    <string name="boardroom"> 会议室 </string>
+    <string name="guest_room"> 客房 </string>
+    <string name="sick_room"> 病房 </string>
+    <string name="general_manager"> 总经理 </string>
+    <string name="icu"> ICU </string>
+    <string name="vip_sickroom"> VIP病 </string>
+    <string name="vip_guest"> VIP客 </string>
+
+    <string name="model_text_1">新增</string>
+    <string name="model_text_2">新增</string>
+    <string name="model_text_3">新增</string>
+    <string name="model_text_4">新增</string>
+
+    <string name="manager_camera">监控控制</string>
+    <string name="popup_scene_edit_title">房间编辑</string>
+    <string name="popup_scene_add_title">新建场景</string>
+    <string name="popup_room_add_title">新建房间</string>
+    <string name="popup_room_add_area">添加区域</string>
+    <string name="popup_scene_custom_name">自定义房间名称</string>
+    <string name="popup_scene_button_cancel">取消</string>
+    <string name="popup_scene_button_ok">确定</string>
+    <string name="scene_edit_delete_title">删除选中房间</string>
+    <string name="scene_edit_hint">提示:删除房间时也会删除该房间中所有区域和区域中的设备</string>
+    <string name="delete_sucess">删除成功</string>
+    <!--选择设备-->
+    <string name="select_device_title">选择设备</string>
+    <string name="rebind">重新绑定</string>
+    <string name="select_device_delete">删除</string>
+
+    <!--场景显示-->
+    <string name="living_room_title">客厅</string>
+    <string name="edit_button">编辑</string>
+    <string name="finish_button">完成</string>
+    <string name="temp">℃</string>
+    <string name="indoor">室内</string>
+    <string name="outdoor">室外</string>
+    <string name="outdoor_temp">12℃</string>
+    <string name="model_edit">模式编辑</string>
+    <string name="room_model">房间模式</string>
+    <string name="humidity">湿度:</string>
+    <string name="humidity_data">20</string>
+    <string name="air_quality">空气质量:</string>
+    <string name="air_quality_data">良好</string>
+    <string name="air_conditioner_control">空调控制</string>
+    <string name="electric_manage">电源管理</string>
+    <string name="music_control">背景音乐控制</string>
+    <string name="center_stack_control">中控面板控制</string>
+    <string name="lighting_control">照明控制</string>
+    <string name="projectors">投影仪</string>
+    <string name="curtain_title">窗帘控制</string>
+    <!--个人中心-->
+    <string name="my_center_title">个人中心</string>
+    <string name="my_center_user_name">昵称</string>
+    <string name="my_center_user_message">签名</string>
+    <string name="my_center_family_manage">家庭管理</string>
+    <string name="my_center_bind_mobile">绑定手机</string>
+    <string name="my_center_bind_email">绑定邮箱</string>
+    <string name="my_center_alarm_mobile">报警手机</string>
+    <string name="my_center_reset_password">重置密码</string>
+    <string name="my_center_exit_btn">退出账号</string>
+    <string name="add_alarm_phone">添加报警手机号</string>
+    <!--体重-->
+    <string name="text_muscle">肌肉</string>
+    <string name="text_water">水</string>
+    <string name="text_bone">骨质</string>
+    <string name="text_BMR">基础代谢</string>
+    <string name="text_BMI">BMI</string>
+    <string name="text_fat_rate">体脂率</string>
+
+    <!--MyHome-->
+    <string name="pop_change_admin">请选择新管理员</string>
+    <string name="pop_change_admin_success">修改管理员成功</string> <!--MyHome-->
+    <string name="pop_change_admin_fail">修改管理员失败</string> <!--MyHome-->
+    <string name="modify_admin_code_fail">安全码修改成功</string> <!--MyHome-->
+
+    <string name="device_mode_activity_search_hint">请输入想查询的内容</string> <!--DeviceModeListeningActivity-->
+
+
+    <string name="input_alarm_phone">请输入报警电话</string>
+    <string name="input_email">请输入要绑定的邮箱</string>
+    <string name="error_password_form">密码格式不正确</string>
+
+    <string name="login_out">退出确认</string>
+    <string name="login_out_hint">确定要退出登录吗？</string>
+    <string name="off_line">下线通知</string>
+    <string name="off_line_hint1">你的账号于</string>
+    <string name="off_line_hint2">在另外一台设备登录。</string>
+    <string name="off_line_hint3">如非本人操作，则可能密码已泄露！</string>
+    <string name="off_line_know">知道了</string>
+    <!--个人资料-->
+    <string name="personal_data_title">个人资料</string>
+    <string name="personal_data_user_name">名字</string>
+    <string name="personal_data_name">名字</string>
+    <string name="personal_data_person_sign">个性签名</string>
+    <string name="personal_data_user_message">签名</string>
+    <string name="personal_data_person_sex">性别</string>
+    <string name="personal_data_person_birthday">生日</string>
+    <string name="personal_data_person_date">1965年10月12日</string>
+    <string name="personal_data_person_constellation">星座</string>
+    <string name="personal_data_person_constellation_desc">今天的恋爱运势相当不错，选个灯光美，气氛佳，装潢棋牌的场所，或许会得到对方善意的回应.而在礼物的挑选上，鲜花加上小卡片的温情攻势，最能打动情人的心，不妨尝试看看！</string>
+    <string name="personal_data_person_height">身高</string>
+    <string name="personal_data_person_height_data">cm</string>
+    <string name="personal_data_person_weight">体重</string>
+    <string name="personal_data_person_weight_data">kg</string>
+    <string name="mo_jie_zuo">生于每年12月22日至1月19日，摩羯座是十二星座中最有耐心，为事最小心、也是最善良的星座。他们做事脚踏实地，也比较固执，不达目的是不会放手的。他们的忍耐力也是出奇的强大，同时也非常勤奋。他们心中总是背负着很多的责任感。</string>
+    <string name="shui_ping_zuo">生于每年1月20日至2月18日，水瓶座的人很聪明，他们最大的特点是创新，追求独一无二的生活，个人主义色彩很浓重的星座。他们对人友善又注重隐私。水瓶座绝对算得上是”友谊之星“，他喜欢结交每一类朋友，但是确很难与他们交心。</string>
+    <string name="shuang_yu_zuo">生于每年2月19日至3月20日，双鱼座是十二宫最后一个星座，他集合了所有星座的优缺点于一身，同时受水象星座的情绪化影响，使他们原来复杂的性格又添加了更复杂的一笔。双鱼座的人最大的优点是有一颗善良的心，他们愿意帮助别人。</string>
+    <string name="bai_yang_zuo">生于每年3月21日至4月19日，白羊座有一种让人看见就觉得开心的感觉，因为总是看起来都是那么地热情、阳光、乐观、坚强，对朋友也慷概大方，性格直来直往，就是有点小脾气。白羊男有大男人主义的性格，而白羊女就是女汉子的形象。</string>
+    <string name="jin_niu_zuo">生于每年4月20日至5月20日，金牛座很保守，喜欢稳定，一旦有什么变动就会觉得心里不踏实，性格也比较慢热，但你是理财高手，对于投资理财都有着独特的见解。金牛男的性格有点儿自我，而金牛女就喜欢投资自己，想要过得更好。</string>
+    <string name="shuang_zi_zuo">生于每年5月21日至6月21日，双子座喜欢追求新鲜感，有点儿小聪明，就是耐心不够，往往做事都是三分钟热度，难以坚持，但是你的可爱性格会让很多人都喜欢跟你做朋友。双子男表面很花心，其实深情，而双子女就喜欢求新和求变。</string>
+    <string name="ju_xie_zuo">生于每年6月22日至7月22日，巨蟹座的情绪容易敏感，也缺乏安全感，容易对一件事情上心，做事情有坚持到底的毅力，为人重情重义，对朋友、家人都特别忠实，巨蟹男是一等一的好男人，顾家爱家人，巨蟹女充满母性光环，非常有爱心。</string>
+    <string name="shi_zi_zuo">生于每年7月23日至8月22日，狮子座有着宏伟的理想，总想靠自己的努力成为人上人，你向往高高在上的优越感，也期待被仰慕被崇拜的感觉，有点儿自信有点儿自大。狮子男的大男人气息很重，爱面子，狮子女热情阳光，对朋友讲义气。</string>
+    <string name="chu_nv_zuo">生于每年8月23日至9月22日，处女座虽然常常被黑，但你还是依然坚持追求自己的完美主义，因为在你看来，生活不能将就，追求的完美更不能将就，有目标才有进步，当然也需要鼓励。处女男的毅力很强，能坚持，处女女的求知欲很强。</string>
+    <string name="tian_ping_zuo">生于每年9月23日至10月23日，天秤座常常追求平等、和谐，擅于察言观色，交际能力很强，因此真心朋友不少，因为你也足够真诚，但是最大的缺点就是面对选择总是犹豫不决。天秤男容易在乎自己而忽略别人，天秤女就喜欢被陪伴的感觉。</string>
+    <string name="tian_xie_zuo">生于每年10月24日至11月22日，天蝎座精力旺盛、占有欲极强，对于生活很有目标，不达到目的誓不罢休，复仇心理重，记仇会让自己不顾一切报复曾经伤害过你的人。天蝎男自我主义色彩很强烈，天蝎女的自我保护意识很强，不容易接近。</string>
+    <string name="she_shou_zuo">生于每年11月23日至12月21日，射手座崇尚自由，勇敢、果断、独立，身上有一股勇往直前的劲儿，不管有多困难，只要想，就能做，你的毅力和自信是难以击倒的。射手男酷爱自由，讨厌被束缚，射手女性格简单直接，不耍心计，可是任性。</string>
+
+
+    <!--家庭管理-->
+    <string name="family_manage_title">家庭管理</string>
+    <string name="family_manage_my_gateway">我家</string>
+    <string name="family_manage_gateway_name">主机名:</string>
+    <string name="family_manage_gateway">DisplayBox</string>
+    <string name="family_manage_mine">管理员</string>
+    <string name="family_manage_wife">老婆</string>
+    <string name="family_manage_sea">海底之渊</string>
+    <string name="family_manage_tom">Tom</string>
+    <string name="family_manage_num">1234</string>
+    <string name="family_manage_action_record">行为记录</string>
+    <string name="family_manage_parent">父母家</string>
+    <string name="family_manage_unbind_gateway">解绑主机</string>
+    <string name="family_manage_dad">老爸</string>
+    <string name="family_manage_mom">老妈</string>
+    <string name="family_family_add">家人添加</string>
+    <string name="family_family_Phone_hint">iCasa账号(手机号码)</string>
+    <string name="error_input_own_mobile">请勿输入自己手机号</string>
+    <string name="family_reset_gateway_code">重置主机码</string>
+    <string name="family_update_admin">更改</string>
+    <string name="family_member_pession">成员权限</string>
+    <string name="family_gateway">主机</string>
+    <string name="family_remark">备注</string>
+    <string name="family_family_exiting">正在退出...</string>
+
+    <string name="gateway">主机</string>
+    <string name="update_gateway_code">修改安全码</string>
+    <string name="old_gateway_code">请输入旧安全码</string>
+    <string name="new_gateway_code">请输入新安全码</string>
+
+    <string name="input_old_password">请输入旧密码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="new_password_diffrent_with_old">旧密码与登录密码不一致</string>
+    <string name="cancle_login">登录取消</string>
+
+    <!--联动管理-->
+    <string name="link_plan_config">联动预案配置</string>
+    <string name="global_model_config">全局模式配置</string>
+    <string name="model">模式配置</string>
+    <string name="link">联动配置</string>
+    <string name="short_model">短</string>
+    <string name="offline_model_config">离线</string>
+    <string name="meeting_model_config">会客</string>
+    <string name="dinner_model_config">就餐</string>
+    <string name="disarming_model_config">撤防</string>
+    <string name="defence_model_config">布防</string>
+    <string name="alarm_link_plan_title">报警联动预案配置</string>
+    <string name="room_name">房间名称</string>
+    <string name="device_type">设备类型</string>
+    <string name="device_name">设备名称</string>
+    <string name="link_plan_office">办公室</string>
+    <string name="link_model_name">模式名称</string>
+    <string name="model_name">模式名称:</string>
+    <string name="plug">插座</string>
+    <string name="meeting_room">客厅</string>
+    <string name="tow_lights">二联灯</string>
+    <string name="light_1">灯1</string>
+    <string name="light_2">灯2</string>
+    <string name="edit_model_name">编辑模式名称</string>
+    <string name="choose_device">选择设备</string>
+    <string name="area_type">区域类型</string>
+    <string name="not_null">不能为空!</string>
+    <string name="not_exceed">不能超过4个字!</string>
+
+    <string name="sound_notice">声音提醒</string>
+    <string name="image_cut">裁剪</string>
+
+    <string name="smoke">烟雾传感器</string>
+    <string name="Ch4CO">危险气体传感器</string>
+
+    <string name="edit_success">修改成功</string>
+    <string name="edit_fail">修改失败</string>
+    <string name="save_fail">保存失败</string>
+    <!--分配权限-->
+    <string name="select_gateway_limit">选择主机</string>
+    <string name="distribute_limit">分配权限</string>
+    <string name="comfort_live_limit">舒适生活</string>
+    <string name="home_security_limit">家庭安全</string>
+    <string name="health_live_limit">健康生活</string>
+    <string name="green_live_limit">绿色生活</string>
+    <string name="device_manage_limit">设备管理</string>
+    <string name="area_manage_limit">区域管理</string>
+    <string name="link_manage_limit">联动管理</string>
+    <string name="confirm_limit">确定</string>
+    <string name="area_manager">区域管理</string>
+
+    <string name="verification_code_mode">0123456789</string>
+    <string name="health_life">健康生活</string>
+    <string name="health_device">智能设备</string>
+    <string name="health_xue_tang">血糖</string>
+    <string name="health_xue_ya">血压</string>
+    <string name="health_ti_zhong">体重</string>
+    <string name="confirm_deletion">确定要删除吗？</string>
+    <string name="confirm_text">确认</string>
+    <string name="select_text">选择</string>
+    <string name="video_record_text">录像记录</string>
+    <string name="mointor_picture_text">监控快照</string>
+    <string name="distribute_limit_title">分配权限</string>
+    <string name="family_login_title">家人申请登录</string>
+    <string name="camera_list_title">摄像头</string>
+
+    <string name="blood_sugar_help">？</string>
+    <string name="blood_sugar_unit"> mmol/L</string>
+    <string name="blood_sugar_breakfast">早餐</string>
+    <string name="blood_sugar_lunch">午餐</string>
+    <string name="blood_sugar_dinner">晚餐</string>
+    <string name="blood_sugar_fasting">空腹</string>
+    <string name="blood_sugar_after">后</string>
+    <string name="blood_sugar_before">前</string>
+    <string name="blood_sugar_sleep_before">睡前</string>
+    <string name="blood_sugar_month">月份</string>
+    <string name="blood_sugar_popup_title">请输入血糖值</string>
+
+    <string name="current_blood_sugar_title">当前血糖</string>
+
+    <!-- 系统设置 -->
+    <string name="system_setting_title">系统设置</string>
+    <string name="popup_restore_title">提示</string>
+    <string name="popup_restore_content">您确定要还原以前备份的版本</string>
+    <string name="setting_backup">一键备份</string>
+    <string name="setting_backup_hint">快速备份当前系统，保证数据安全</string>
+    <string name="setting_restore">一键还原</string>
+    <string name="setting_gateway_upgrade">主机升级</string>
+    <string name="setting_shock_hint">震动提示</string>
+    <string name="setting_voice_hint">声音提醒</string>
+    <string name="setting_help_center">帮助中心</string>
+    <string name="setting_about_us">关于我们</string>
+
+    <string name="gateway_upgrade_title">主机升级</string>
+    <string name="hardware_version">固件版本：</string>
+    <string name="software_version">软件版本：</string>
+    <string name="gateway_upgrade_btn">升 级</string>
+
+    <string name="help_title">帮助</string>
+    <string name="help_configuration">配置问题</string>
+    <string name="help_control">操控问题</string>
+    <string name="help_data">数据问题</string>
+    <string name="help_account">账号问题</string>
+    <string name="help_limit">权限问题</string>
+    <string name="help_rests">其他问题</string>
+    <string name="help_service">联系客服</string>
+
+    <string name="about_us_jia">关于iCasa</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="advice_feedback">意见反馈</string>
+
+    <string name="introduction_jia">\t\t\t博耳“iCasa”家居智能控制系统是以住宅为平台，家居电器及家电设备为主要控制对象，利用综合布线术、网络通信技术、安全防范技术、自动控制技术、音视频技术将家居生活相关的设施进行高效集成，构建高效的住宅设施与家庭日常事务的控制管理系统，提升家居质量，达到智能、安全、便利、舒适的生活方式，实现环保节能的居住环境。</string>
+    <string name="feedback_hint">留下任何您想说的，哪怕是只言片语</string>
+    <string name="feedback_btn_text">发 送</string>
+
+    <string name="select_device">选择设备</string>
+    <string name="device_manage">设备管理</string>
+
+    <!-- 自动加载列表控件 -->
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more"/>
+    <string name="p2refresh_end_load_no_more">已加载全部信息</string>
+    <string name="pinglun_end_load_no_more">已加载全部评论</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新…</string>
+    <string name="p2refresh_doing_end_refresh">加载中…</string>
+    <string name="p2refresh_refresh_lasttime">最近更新 : </string>
+    <string name="alarm_device">告警设备：</string>
+    <string name="alarm_information">告警信息：</string>
+    <string name="alarm_time">发生时间：</string>
+    <string name="green_pressed">电压：</string>
+    <string name="green_current">电流：</string>
+    <string name="green_year">年</string>
+    <string name="green_month">月</string>
+    <string name="green_day">日</string>
+    <string name="green_total">总计:</string>
+    <string name="green_ammeter">单相表</string>
+    <string name="green_ammeter_three">三相表</string>
+    <string name="green_sum">累计：</string>
+    <string name="green_current_month">当月：</string>
+    <string name="green_zong_ji">总计</string>
+    <!-- 自动加载列表控件 end -->
+
+    <string name="scan_device_address">扫描设备地址</string>
+    <string name="device_address">设备地址：</string>
+    <string name="add_device_remark">备注：</string>
+    <string name="custom_device_name">自定义设备名称</string>
+    <string name="relate_device">关联设备：</string>
+    <string name="click_relate">点击关联设备</string>
+    <string name="scan_device_hint">扫描超时，请检查设备</string>
+
+    <string name="toast_loading">加载中...</string>
+
+    <string name="toast_upload_success">恭喜，提交成功！</string>
+    <string name="toast_logining">正在登录...</string>
+    <string name="toast_login_success">登录成功</string>
+    <string name="toast_login_fail">"登录出错，请重试"</string>
+    <string name="toast_query_token_fail">"登录出错，和云端握手失败"</string>
+
+    <string name="toast_input_mobile">请输入手机号</string>
+    <string name="toast_check_hint">请阅读并同意《用户协议》</string>
+    <string name="toast_error_mobile">手机号码格式不正确</string>
+    <string name="toast_input_pwd">请输入密码</string>
+    <string name="toast_error_pwd">请输入6-12位密码</string>
+    <string name="toast_input_code">请输入验证码</string>
+    <string name="toast_error_code">验证码错误</string>
+    <string name="toast_mobile_exist">手机号已注册</string>
+    <string name="toast_mobile_not_exist">手机号还未注册</string>
+
+    <string name="green_live_title">绿色生活</string>
+    <string name="alarm_information_title">报警信息</string>
+    <string name="smart_device">智能设备</string>
+    <string name="blood_sweet">血糖仪</string>
+    <string name="blood_press">血压仪</string>
+    <string name="weight_balance">体脂秤</string>
+    <string name="urine_test">尿检仪</string>
+
+    <string name="blood_press_danchun">单纯收缩期高血压</string>
+    <string name="blood_press_num_dan"><![CDATA[高压>140或低压<90]]></string>
+    <string name="third_blood_press">3级高血压</string>
+    <string name="second_blood_press">2级高血压</string>
+    <string name="first_blood_press">1级高血压</string>
+    <string name="normal_value">正常高值</string>
+    <string name="normal_blood_press">正常血压</string>
+    <string name="low_blood_press">低血压</string>
+    <string name="high_blood_180"><![CDATA[高压>180或低压<110]]></string>
+    <string name="high_blood_179">高压160-179或低压100-109</string>
+    <string name="high_blood_159">高压140-159或低压90-99</string>
+    <string name="high_blood_139">高压120-139或低压80-89</string>
+    <string name="high_blood_120">高压90-120或低压60-80</string>
+    <string name="high_blood_90"><![CDATA[高压<90或低压<60]]></string>
+    <string name="blood_press_tip">注：当收缩压和舒张压属于不同级别时，以较高为准</string>
+    <string name="heart_precent">心率</string>
+    <string name="blood_belong">属于</string>
+    <string name="heart_fast">心动过速</string>
+    <string name="over100"><![CDATA[>100]]></string>
+    <string name="normal_heart">正常</string>
+    <string name="below_100">600-100</string>
+    <string name="heat_slow">心动过缓</string>
+    <string name="below_60"><![CDATA[<60]]></string>
+    <string name="lately_blood_press">当前血压</string>
+    <!-- 电源管理 start -->
+    <string name="power_manage_title">电源管理</string>
+    <string name="power_text">功率：</string>
+    <string name="electric_energy">电能：</string>
+    <string name="energy_consumption">能耗详情</string>
+    <string name="power_warmer">取暖器</string>
+    <string name="light_change">调光灯</string>
+    <!-- 电源管理 end -->
+
+    <!-- 尿检 start -->
+    <string name="cell_analysis_title">白细胞分析</string>
+    <string name="urinalysis_title">尿检</string>
+    <string name="urinalysis_history_title">尿检历史记录</string>
+    <string name="date_to">至</string>
+
+    <string name="urine_white_cell">白细胞</string>
+    <string name="urine_nitrite">亚硝酸盐</string>
+    <string name="urine_uro">尿胆原</string>
+    <string name="urine_protein">蛋白质</string>
+    <string name="urine_ph">PH值</string>
+    <string name="urine_ubg">尿胆原</string>
+    <string name="urine_bld">潜血</string>
+    <string name="urine_weight">比重</string>
+    <string name="urine_ketone">酮体</string>
+    <string name="urine_bilirubin">胆红素</string>
+    <string name="urine_glucose">葡萄糖</string>
+    <string name="urine_vc">维生素C</string>
+
+    <string name="urinalysis_normal">正常</string>
+    <string name="urinalysis_leu">白细胞(LEU)</string>
+    <string name="urinalysis_nit">亚硝酸盐(NIT)</string>
+    <string name="urinalysis_ubg">尿胆原(UBG)</string>
+    <string name="urinalysis_pro">蛋白质(PRO)</string>
+    <string name="urinalysis_rbc">红细胞(RBC)</string>
+    <string name="urinalysis_ph">PH值(PH)</string>
+    <string name="urinalysis_bld">潜血(BLD)</string>
+
+    <string name="check_password">验证密码</string>
+    <string name="bind_new_phone">绑定新手机号</string>
+    <string name="previous_phone">原手机号：</string>
+    <string name="input_password_hint">请输入账号密码</string>
+    <string name="check_text">验证</string>
+    <string name="light1_name">单联灯</string>
+    <string name="light2_name">二联灯</string>
+    <string name="light3_name">三联灯</string>
+    <string name="light4_name">四联灯</string>
+    <string name="light_adjust_name">调光灯</string>
+    <string name="pannel_name">场景面板</string>
+    <string name="intercom_name">智能门禁</string>
+    <string name="curtain_name">窗帘</string>
+    <string name="tv_name">电视</string>
+    <string name="dvd_name">DVD</string>
+    <string name="iptv_name">IPTV</string>
+    <string name="air_condition_name">空调</string>
+    <string name="socket_name">插座</string>
+    <string name="camera_name">监控</string>
+    <string name="exist_name">存在传感器</string>
+    <string name="ch4_co_name">危险气体</string>
+    <string name="smoke_name">烟雾传感器</string>
+    <string name="o2_co2_name">健康气体</string>
+    <string name="water_name">水浸</string>
+    <string name="fall_name">跌倒传感器</string>
+    <string name="env_name">环境监测器</string>
+    <string name="sos_name">报警器</string>
+    <string name="sound_name">音频控制</string>
+    <string name="sov_name">电磁阀</string>
+    <string name="lock_name">指纹锁</string>
+    <string name="audio_name">背景音乐</string>
+    <string name="hgc_name">中控面板</string>
+    <string name="projector_name">投影仪</string>
+    <string name="cac_name">中央空调</string>
+    <string name="new_area">新区域</string>
+    <string name="floor_heating_name">地暖</string>
+    <string name="gsm_name">门窗磁</string>
+    <string name="curtainSensor_name">红外入侵</string>
+
+    <!-- 尿检 end -->
+
+    <!--报警电话-->
+    <string name="alarm_phone">报警电话</string>
+    <string name="input_phone_hint">请输入手机号</string>
+    <string name="wrong_phone_hint">手机号码格式不正确</string>
+    <string name="verification_code_desc">验证码为6位数字</string>
+    <string name="history_level_trend">历史用量趋势</string>
+    <string name="statistics_breakdown">分项统计</string>
+    <string name="have_used">已用</string>
+    <string name="cubic_metre_text">立方米</string>
+    <string name="cubic_metre_parenthesis">(立方米)</string>
+    <string name="ton_text">吨</string>
+    <string name="ton_parenthesis">(吨)</string>
+    <string name="kwh_text">kWh</string>
+    <string name="kwh_parenthesis">(kWh)</string>
+    <string name="had_delete">已删除</string>
+    <string name="had_unbind">已解绑</string>
+    <string name="had_rebind">已重新绑定</string>
+    <string name="select_device_type">请选择设备类型</string>
+    <string name="device_name_cannot_null">设备名称不能为空！</string>
+    <string name="device_address_cannot_null">设备地址不能为空！</string>
+    <string name="add_device">新增设备</string>
+    <string name="add_new_device">添加新设备</string>
+    <string name="add_have_device">添加已有设备</string>
+    <string name="warning_text">警告</string>
+    <string name="delete_message">将从列表中彻底删除，重新启用需要扫描绑定</string>
+    <string name="dismiss_message">您确定要解除此设备的绑定？</string>
+    <string name="water_text">水</string>
+    <string name="electric_text">电</string>
+    <string name="gas_text">气</string>
+
+    <!--插座-->
+    <string name="use_electric_situation">用电概况</string>
+    <string name="family_data_title">家人资料</string>
+    <string name="health_share">健康分享</string>
+    <string name="health_manage">健康管理</string>
+    <string name="health_manage_desc">您勾选的用户将有权限查看您的健康数据</string>
+    <string name="select_all">全选</string>
+    <string name="blood_pressure_record">血压记录</string>
+    <string name="blood_sugar_device">血糖仪</string>
+    <string name="status_low">偏低</string>
+    <string name="blood_pressure_device">血压仪</string>
+    <string name="status_normal">正常</string>
+    <string name="body_fat_device">体脂秤</string>
+    <string name="uro_device">尿检仪</string>
+
+
+    <!--气体检测-->
+    <string name="gas_test_alarm">报警:</string>
+    <string name="gas_test_pm">PM2.5:</string>
+    <string name="gas_test_humidity">湿度:   </string>
+    <string name="gas_test_temperature">温度:</string>
+    <string name="gas_test_cascophen">甲醛:</string>
+    <string name="gas_test_oxygen">氧气:</string>
+    <string name="gas_test_CO2">二氧化碳:</string>
+
+    <string name="gas_pm_unit">ug/m³</string>
+    <string name="gas_humidity_unit">%</string>
+    <string name="gas_temperature_unit">℃</string>
+    <string name="gas_cascophen_unit">mg/m³</string>
+
+    <!--选择登录-->
+    <string name="login_select_secure_code">请输入主机安全码</string>
+    <string name="projector_list_title">投影仪列表</string>
+
+    <!-- 摄像头集成代码 -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="txtName">名称:</string>
+    <string name="txtAddCamera">增加摄像机</string>
+    <string name="camera">摄像头</string>
+    <string name="add">添加</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtSecurityCode">密码:</string>
+    <string name="btnScan">扫描条码</string>
+    <string name="btnSearch">搜索</string>
+    <string name="dialog_LanSearch">内网搜索</string>
+    <string name="btnRefresh">刷新</string>
+    <string name="tips_add_camera_ok">添加摄像头成功.</string>
+    <string name="txt_reflash_speaker">按住进行通话</string>
+    <string name="history">历史监控</string>
+    <string name="delete">删除</string>
+    <string name="dlgAreYouSureToDeleteThisRecord">是否要删除此影片？</string>
+    <string name="dlgAreYouSureToDeleteThisSnapshot">要删除此图片吗？</string>
+    <string name="dlgDeleteSnapshotYes">确定</string>
+    <string name="dlgDeleteSnapshotNo">取消</string>
+    <string name="txt_edit">编辑</string>
+    <string name="txt_done">完成</string>
+    <string name="txt_sele">选择</string>
+    <string name="txt_allchoose">全部选择</string>
+    <string name="txt_spear">声音</string>
+    <string name="txt_record">录像</string>
+    <string name="txt_snapshot">抓图</string>
+    <string name="txt_recording">正在录制</string>
+    <string name="save_success">保存成功</string>
+    <!-- Connection Status -->
+    <string name="connstus_connecting">连接中&#8230;</string>
+    <string name="connstus_connected">在线</string>
+    <string name="connstus_disconnect">离线</string>
+    <string name="connstus_unknown_device">未知设备</string>
+    <string name="connstus_connection_failed">连接失败</string>
+    <string name="connstus_wrong_password">错误密码</string>
+    <string name="connection_timeout">连线逾时</string>
+    <!-- Event type -->
+    <string name="evttype_all">全部</string>
+    <string name="evttype_motion_detection">移动侦测</string>
+    <string name="evttype_video_lost">视频中断</string>
+    <string name="evttype_io_alarm">IO 报警</string>
+    <string name="evttype_motion_pass">移动侦测</string>
+    <string name="evttype_video_resume">视频恢复</string>
+    <string name="evttype_io_alarm_pass">IO 报警</string>
+    <string name="evttype_expt_reboot">系统异常重启</string>
+    <string name="evttype_sd_fault">SD卡错误</string>
+    <string name="evttype_fulltime_recording">全时录像</string>
+    <!-- Connection Mode -->
+    <string name="connmode_p2p">P2P</string>
+    <string name="connmode_relay">Relay</string>
+    <string name="connmode_lan">局域网</string>
+    <string name="connmode_none">无</string>
+    <!-- Live View page -->
+    <string name="txtFPS">FPS:</string>
+    <string name="txtBPS">bps:</string>
+    <string name="txtOnlineNumber">在线人数:</string>
+    <string name="txtFrameRatio">掉包率:</string>
+    <string name="txtTurnOffAudio">关闭所有声音</string>
+    <string name="txtTurnOnSpeaker">开启扬声器</string>
+    <string name="txtTurnOnMicrophone">开启麦克风</string>
+    <string name="txtAudioOff">声音关闭</string>
+    <string name="txtSpeaker">扬声器</string>
+    <string name="txtMicrophone">麦克风</string>
+    <string name="txtMute">静音</string>
+    <string name="txtListen">监听</string>
+    <string name="txtListening">监听中</string>
+    <string name="txtSpeak">通话</string>
+    <string name="txtSpeaking">通话中</string>
+    <string name="txtQuality">收视状况:</string>
+    <string name="txtGood">佳</string>
+    <string name="txtNormal">普通</string>
+    <string name="txtBad">差</string>
+    <string name="software_decode">Codec : S</string>
+    <string name="hardware_decode">Codec : H</string>
+    <string name="txtleftcontent">监控快照</string>
+    <string name="txtrightcontent">录像记录</string>
+    <string name="video_play">录像播放</string>
+    <string name="tips_no_snapshot_found">查无快照</string>
+    <string name="tips_snapshot_ok">快照成功</string>
+    <string name="tips_snapshot_failed">快照失败</string>
+    <string name="tips_no_sdcard">未偵測到您的手機有安裝SD卡。</string>
+    <string name="tips_search_event_no_result">未搜寻到任何记录。</string>
+    <string name="tips_play_record_failed">播放录像失败。</string>
+    <string name="tips_play_record_end">該影像已播放完畢。</string>
+    <string name="recording_tips_size">储存空间即将不足</string>
+    <string name="recording_tips_format">不支持格式</string>
+    <string name="recording_save">存储成功</string>
+
+    <string name="tips_warning">警告</string>
+    <string name="tips_add_camera_duplicated">该摄影机已存在，请输入另一个[UID]。</string>
+    <string name="tips_camera_name">请输入[摄像机名称]。</string>
+    <string name="tips_dev_uid">请输入 [UID]。</string>
+    <string name="tips_dev_uid_not">不存在此 [UID]。</string>
+    <string name="tips_dev_uid_character">[UID] 必须输入20个字符。</string>
+    <string name="tips_dev_security_code">请输入[密码].</string>
+    <string name="dialog_no_app">播放器不支持</string>
+    <string name="txt_intent_to_app">因为您的手机播放器不支持播放此档案，需要下载额外的播放软体来观看此影片(MX Player)</string>
+
+
+    <string name="top_title_bar">伟创达云对讲</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">v0.15</string>
+
+    <!-- 红外遥控器 -->
+    <string name="remote_device_type_title">设备类型</string>
+    <string name="remote_device_brand_model_title">品牌型号</string>
+    <string name="remote_controller_ac_title">空调控制</string>
+    <string name="remote_controller_ac_settemp">设定温度</string>
+    <string name="remote_controller_ac_cool">制冷</string>
+    <string name="remote_controller_ac_hot">制热</string>
+    <string name="remote_controller_ac_fan">通风</string>
+    <string name="remote_controller_ac_midfan">中风</string>
+    <string name="remote_controller_ac_windlevel">风速</string>
+    <string name="remote_controller_ac_auto">自动</string>
+    <string name="remote_controller_ac_shake">摆动</string>
+    <string name="remote_controller_ac_winddri">风向</string>
+    <string name="remote_controller_ac_weak">弱风</string>
+    <string name="remote_controller_ac_strong">强风</string>
+    <string name="remote_controller_ac_horizon">水平风向</string>
+    <string name="remote_controller_ac_vertiror">垂直风向</string>
+    <string name="remote_controller_ac_open">请开启空调</string>
+
+    <string name="remote_controller_tv_title">影音控制</string>
+    <string name="remote_controller_tv_tv">电视</string>
+    <string name="remote_controller_tv_menu">菜单</string>
+    <string name="remote_controller_tv_main">主页</string>
+    <string name="remote_controller_tv_back">后退</string>
+    <!--FurnitureListActivity界面-->
+    <string name="title_activity_add_host_actvity">AddHostActvity</string>
+    <string name="area_hint">请输入区域名称(限三字)</string>
+    <string name="area_name_edit">区域名编辑</string>
+
+    <string name="family_admin_add_hint">By Delos账号（手机号）</string>
+
+    <string name="trigger_condition">触发条件:</string>
+    <string name="manual_operation">手动</string>
+    <string name="timer_operation">定时</string>
+    <string name="timer_setting">定时设置:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--add by sun-->
+    <string name="text_prompt">温馨提示</string>
+    <string name="is_cancle_gateway_apply">是否取消向主机发出的申请</string>
+    <string name="success_cancle_gateway_apply">成功取消向主机发出的申请</string>
+    <string name="txt_definition">清晰度</string>
+    <string name="homepage_weather_info">天气预报</string>
+    <string name="homepage_room_info_error">未加载到房屋信息</string>
+    <!--DeviceSettingListeningActivity-->
+    <string name="device_setting_activity_open_pairing">开始匹配</string>
+    <string name="device_setting_activity_close_pairing">关闭匹配</string>
+    <string name="device_setting_activity_bind_dismiss">解绑成功</string>
+    <string name="device_setting_activity_bind_fail">绑定失败</string>
+    <string name="device_setting_activity_close_success">绑定成功</string>
+
+    <string name="link_mode_timer_setting_time">正在设定</string>
+    <string name="link_mode_timer_setting_time_success">定时任务设置成功</string>
+    <string name="link_mode_timer_setting_time_fail">定时任务设置失败</string>
+    <string name="scale_conn_activity_toast_show_advice">建议:移步个人中心设置年龄身高</string>
+    <string name="scale_conn_activity_connecting">正在连接中...</string>
+    <string name="scale_conn_activity_measureing">测量中...</string>
+    <string name="scale_conn_activity_bluetooth_connect_success">蓝牙连接成功</string>
+    <string name="scale_conn_activity_bluetooth_connect_fail">蓝牙连接失败</string>
+    <string name="scale_conn_activity_bluetooth_disconnect">蓝牙已断开连接</string>
+
+    <string name="popupwindow_modify_confirm">确认修改</string>
+    <string name="popupwindow_modify_confirm_YES_OR_NO">是否要修改主机别名？</string>
+
+    <!--权限设置-->
+    <string name="permission_manager_settings">设置</string>
+    <string name="permission_manager_help">帮助</string>
+    <string name="permission_manager_text">当前应用缺少</string>
+    <string name="permission_manager_text2">权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="permission_manager_quit">退出</string>
+
+    <!-- 模式-->
+    <string name="link_modeActivity_updataMode_fail">模式更新失败</string>
+    <string name="text_query_fail">未查到数据,请稍后重试</string>
+
+    <!--体重-->
+    <string name="text_weight_history">体重记录</string>
+    <string name="text_fat_super">超级肥胖</string>
+    <string name="text_fat_severe">严重肥胖</string>
+    <string name="text_fat">肥胖</string>
+    <string name="text_weight_over">超重</string>
+    <string name="text_weight_normal">正常</string>
+    <string name="text_weight_pink">消瘦</string>
+
+    <string name="weight_40">≥40kg/m²</string>
+    <string name="weight_30_39.9">30-39.9kg/m²</string>
+    <string name="weight_28_29.9">2-39.9kg/m²</string>
+    <string name="weight_24_27">24-27kg/m²</string>
+    <string name="weight_18.5_23.9">18.5-23.9kg/m²</string>
+    <string name="weight_18.5_">﹤18.5kg/m²</string>
+
+    <string name="refresh_again">重新刷新</string>
+
+    <string name="text_reName">重命名</string>
+
+    <string name="text_hint_scan_batch">点击下方按钮，开始扫描添加设备</string>
+    <string name="text_start_scan">开始扫描</string>
+
+
+    <!--照明控制 百分比-->
+    <string name="ivLightTop_percent_percent">30%</string><!--activity_lighting_control TopLight-->
+    <string name="ivItemImage_light_percent_percent">15%h</string><!-- item_lighting_control_child 子listView item 高度-->
+    <string name="lvchild_item_toggle_height_percent">100%h</string><!-- 子listView item 中开关的高度-->
+    <string name="lvchild_item_toggle_width">100%h</string><!-- 子listView item 中开关的高度-->
+    <!--添加设备 百分比-->
+    <string name="add_device_recyclerView_top_height">8%</string> <!--recyclerView 高度-->
+    <string name="add_device_recyclerView_top2_height">13%</string>
+    <!--设备图标显示-->
+    <string name="add_device_ivSelectedDevice_height">13%</string>
+    <string name="add_device_ivSelectedDevice_width">40%</string>
+    <string name="add_device_ivSelectedDevice_margintop">5%</string>
+    <!--自定义设备名称-->
+    <string name="add_device_device_name_width">60%</string>
+    <string name="add_device_device_name_height">6%</string>
+    <!--扫描设备-->
+    <string name="add_device_search_device_width">70%</string>
+    <string name="add_device_search_device_height">6.25%</string>
+    <string name="add_device_search_device_margintop">3.75%</string>
+    <!--设备地址-->
+    <string name="add_device_device_addr_width">90%</string>
+    <string name="add_device_device_addr_height">5%</string>
+    <string name="add_device_device_addr_margintop">4%</string>
+    <!--设备 备注-->
+    <string name="add_device_device_remarks_width">90%</string>
+    <string name="add_device_device_remarks_height">5%</string>
+    <string name="add_device_device_remarks_margintop">2%</string>
+    <!--确认-->
+    <string name="add_device_commit_width">80%</string>
+    <string name="add_device_commit_height">6.25%</string>
+    <string name="add_device_commit_marginbottom">3%</string>
+
+    <!--系统设置 toggle-->
+    <string name="system_setting_toggle_height">50%w</string>
+    <string name="system_setting_toggle_width">70%w</string>
+    <string name="system_setting_toggle_parent_width">20%</string>
+
+
+    <string name="setting_sys">System Settings</string>
+
+
+    <!--delos-->
+    <string name="main_tab">首页</string>
+    <string name="mall_tab">商城</string>
+    <string name="discovery_tab">发现</string>
+    <string name="mine_tab">我的</string>
+
+
+    <string name="doorbell_name">智能门铃</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#00F2F2F2">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#00F2F2F2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="投影仪"
+            android:textColor="#383838"
+            android:textSize="18sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivLeft"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_projector_left"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_projector_middle"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/ivRight"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_projector_right"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivCenter"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_projector_middle"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

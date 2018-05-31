@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_base_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/layout_title_bg"
+            >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_nav_back" />
+
+            <LinearLayout
+                android:id="@+id/ll_anchor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_et_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_gateway_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:minWidth="40dp"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/gray_et_text"
+                    android:textSize="14sp" />
+
+                <CheckedTextView
+                    android:id="@+id/ctv_gateway_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_arrow_gray_up_down"
+                    android:checked="false"
+                    android:clickable="false"
+                    />
+            </LinearLayout>
+            <!--添加设备-->
+            <ImageView
+                android:id="@+id/iv_add_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/ic_nav_add" />
+
+            <ImageView
+                android:id="@+id/iv_device_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/iv_add_device"
+                android:background="@mipmap/ic_nav_set" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll_all_device"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_all_device"
+                    android:textColor="@color/gray_et_text"
+                    android:textSize="15sp" />
+
+                <CheckedTextView
+                    android:id="@+id/ctv_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/tv_group_name"
+                    android:background="@drawable/bg_arrow_gray_up_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_room_manager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_device_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_addbatch_edit"
+                    android:text="@string/text_room_manager"
+                    android:textColor="@color/blue_text_water"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_color" />
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_show_device"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="afterDescendants"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_classify_device"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@color/white"
+                    app:tabIndicatorColor="@color/blue_btn_bg"
+                    app:tabSelectedTextColor="@color/blue_btn_bg"
+                    app:tabTextColor="@color/gray_et_hint" />
+                <!--  android:background="@color/white"
+                  app:tabIndicatorColor="@color/yellow_btn_bg"
+                  app:tabSelectedTextColor="@color/yellow_btn_bg"
+                  app:tabTextAppearance="@dimen/normal_txt"
+                  app:tabTextColor="@color/gray_et_text"-->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabtn_choice_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="25dp"
+        android:src="@mipmap/ic_room_mode"
+        android:visibility="visible"
+        app:backgroundTint="@color/white"
+        app:rippleColor="#33728dff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp" />
+</RelativeLayout>

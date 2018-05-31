@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvModel"
+            style="@style/style_item_text"
+            android:text="@string/offline_model_config"
+            app:layout_marginLeftPercent="8.6%" />
+
+        <ImageView
+            style="@style/style_item_image"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_personal_center_more"
+            app:layout_marginRightPercent="5.3%" />
+
+        <ImageView
+            android:id="@+id/img_timer_task_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_link_manager_timer"
+            android:visibility="visible"
+            app:layout_marginRightPercent="10.6%" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/style_line"
+        app:layout_marginLeftPercent="8.3%" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

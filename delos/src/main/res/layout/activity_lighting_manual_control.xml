@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ring_seekbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <com.boer.delos.widget.RingSeekBar
+            android:id="@+id/ring_seekbar"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            ring_seekbar:progress_background="@color/grey_device_control"
+            ring_seekbar:progress_front="@color/blue_device_control"
+            ring_seekbar:progress_max="100"
+            ring_seekbar:progress_text_color="@color/blue_device_control"
+            ring_seekbar:progress_text_size="50dp"
+            ring_seekbar:progress_text_stroke_width="10dp"
+            ring_seekbar:progress_width="6dp"
+            ring_seekbar:show_progress_text="true"
+            ring_seekbar:thumb="@drawable/roll_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbLight"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_light_on_off"
+                android:button="@null"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/text_light_toggle"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_lighting_time"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/ic_light_zero"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/text_lighting_time"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="7%"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tvUrinalysisTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2015-08-05 14:18"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tvUrinalysisScore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="85"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/tvUrinalysisScore"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tvUrinalysisType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="血压"
+            android:textColor="#EC4183"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"/>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllLEU"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_leu"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvLEUState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMoreLEU"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/ivLEURight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivMoreLEU"
+                />
+
+            <ImageView
+                android:id="@+id/ivLEUCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivLEURight"/>
+
+            <ImageView
+                android:id="@+id/ivLEULeft"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivLEUCenter"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllNIT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_nit"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvNITState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMoreNIT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/ivNITRight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivMoreNIT"
+                />
+
+            <ImageView
+                android:id="@+id/ivNITCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivNITRight"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivNITCenter"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllUBG"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_ubg"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvUBGState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMoreUBG"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/ivUBGRight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivMoreUBG"
+                />
+
+            <ImageView
+                android:id="@+id/ivUBGCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivUBGRight"/>
+
+            <ImageView
+                android:id="@+id/ivUBGLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivUBGCenter"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllPRO"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_pro"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvPROState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMorePRO"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/ivPRORight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivMorePRO"
+                />
+
+            <ImageView
+                android:id="@+id/ivPROCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivPRORight"/>
+
+            <ImageView
+                android:id="@+id/ivPROLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivPROCenter"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllRBC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_rbc"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvRBCState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMoreRBC"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/ivRBCRight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivMoreRBC"
+                />
+
+            <ImageView
+                android:id="@+id/ivRBCCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivRBCRight"/>
+
+            <ImageView
+                android:id="@+id/ivRBCLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivRBCCenter"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllPH"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_ph"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvPHState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMorePH"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <SeekBar
+                android:id="@+id/sbPh"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="40%"
+                app:layout_heightPercent="80%"
+                android:minWidth="150dp"
+                android:layout_toLeftOf="@id/ivMorePH"
+                android:max="100"
+                android:progress="30"
+                android:progressDrawable="@drawable/layer_ph_bg"
+                android:background="@drawable/shape_gradient"
+                android:thumb="@drawable/shape_line_white"/>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pllBLD"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="10%"
+            android:text="@string/urinalysis_bld"
+            android:textColor="@color/gray_text"
+            android:gravity="center_vertical"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_marginBottomPercent="10%">
+
+            <TextView
+                android:id="@+id/tvBLDState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/urinalysis_normal"
+                android:textColor="@color/btn_green"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivMoreBLD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingBottomPercent="1%"
+                android:src="@drawable/ic_help_more"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/ivBLDRight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivMoreBLD"
+                />
+
+            <ImageView
+                android:id="@+id/ivBLDCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivBLDRight"/>
+
+            <ImageView
+                android:id="@+id/ivBLDLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:src="@drawable/ic_urinalysis_index"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/ivBLDCenter"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_line"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

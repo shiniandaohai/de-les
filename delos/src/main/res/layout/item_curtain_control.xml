@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EEEEEE"
+        android:text="窗帘"
+        android:textSize="18sp"
+        android:textColor="@color/gray_text"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/ivItemLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/selector_curtain_open"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:id="@+id/ivItemCenter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/selector_curtain_stop"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/ivItemRight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/selector_curtain_close"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

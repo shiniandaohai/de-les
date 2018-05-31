@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/img_device"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_camera_default"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/shape"
+            android:text="@string/history"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

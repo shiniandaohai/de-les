@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--照明控制 百分比-->
+    <string name="ivLightTop_percent_percent">30%</string><!--activity_lighting_control TopLight-->
+    <string name="ivItemImage_light_percent_percent">8%w</string><!-- item_lighting_control_child 子listView item 高度-->
+
+    <!--添加设备 百分比-->
+    <string name="add_device_recyclerView_top_height">8%</string> <!--recyclerView 高度-->
+    <string name="add_device_recyclerView_top2_height">13%</string>
+    <!--设备图标显示-->
+    <string name="add_device_ivSelectedDevice_height">13%</string>
+    <string name="add_device_ivSelectedDevice_width">40%</string>
+    <string name="add_device_ivSelectedDevice_margintop">5%</string>
+    <!--自定义设备名称-->
+    <string name="add_device_device_name_width">60%</string>
+    <string name="add_device_device_name_height">6%</string>
+    <!--扫描设备-->
+    <string name="add_device_search_device_width">70%</string>
+    <string name="add_device_search_device_height">6.25%</string>
+    <string name="add_device_search_device_margintop">3.75%</string>
+    <!--设备地址-->
+    <string name="add_device_device_addr_width">90%</string>
+    <string name="add_device_device_addr_height">5%</string>
+    <string name="add_device_device_addr_margintop">4%</string>
+    <!--设备 备注-->
+    <string name="add_device_device_remarks_width">90%</string>
+    <string name="add_device_device_remarks_height">5%</string>
+    <string name="add_device_device_remarks_margintop">2%</string>
+    <!--确认-->
+    <string name="add_device_commit_width">80%</string>
+    <string name="add_device_commit_height">6.25%</string>
+    <string name="add_device_commit_marginbottom">3%</string>
+
+</resources>

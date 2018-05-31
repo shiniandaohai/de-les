@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvElectricYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="@string/green_year"
+                    android:textColor="@color/gray_et_text"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:id="@+id/view_year"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_btn_bg"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvElectricMonth"
+                    android:layout_width="30dp"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="@string/green_month"
+                    android:textColor="@color/gray_et_text"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:id="@+id/view_month"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_btn_bg"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvElectricDay"
+                    android:layout_width="30dp"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="@string/green_day"
+                    android:textColor="@color/blue_text_water"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:id="@+id/view_day"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_btn_bg"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_date_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2017年4月3日"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp"/>
+
+            <CheckedTextView
+                android:id="@+id/ctv_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_arrow_gray_up_down"
+                />
+
+            <TextView
+                android:id="@+id/tv_energy_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/text_elect_amount"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lcElectricityHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/layout_base_bg"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="@string/text_ammeter"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ammeter"
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="0A"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="@string/text_voltage"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_voltage"
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="0V"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="@string/text_power"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_power"
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="0W"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="@string/text_energy"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_energy"
+                    style="@style/text_weather_style"
+                    android:paddingTop="8dp"
+                    android:text="0kWh"
+                    android:textColor="@color/gray_et_text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <CheckedTextView
+                android:id="@+id/ctv_socket_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_socket_on_off"
+                android:button="@null"
+                />
+
+            <TextView
+                style="@style/text_style"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_on_off"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/llLinkPlan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="3.1%">
+
+        <TextView
+            android:id="@+id/tvLinkPlan"
+            style="@style/style_text"
+            android:text="@string/link_plan_config"
+            app:layout_marginLeftPercent="8.6%" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="2dp"
+            android:src="@drawable/ic_personal_center_more"
+            app:layout_marginRightPercent="5.2%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_marginTopPercent="3.1%">
+
+        <TextView
+            android:id="@+id/tvGlobalConfig"
+            style="@style/style_text"
+            android:text="@string/global_model_config"
+            app:layout_marginLeftPercent="8.6%" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvLinkList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray_line" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

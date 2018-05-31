@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_base_bg"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_item_circle"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_device_type"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_air_cleaner"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_device_on"
+                android:textColor="@color/gray_et_text"
+                android:textSize="14sp"
+
+                />
+
+            <CheckBox
+                android:id="@+id/cb_device_status"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_gray_blue"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/status_device_on"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_device_classify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="15dp"
+            android:text="客厅"
+            android:textColor="@color/gray_et_text"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

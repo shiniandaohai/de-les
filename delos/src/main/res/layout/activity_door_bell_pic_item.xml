@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:gravity="center"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:background="@color/red"
+            />
+        <FrameLayout
+            android:id="@+id/flSelect"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#7f000000"
+            android:visibility="gone"
+            tools:visibility="visible"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_door_bell_pic_item_tick"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

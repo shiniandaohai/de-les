@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <CheckBox
+        android:id="@+id/cbSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_textViewType"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#89000000"
+            android:textSize="14sp"
+            tools:text="室内PM2.5超标"
+            />
+
+        <TextView
+            android:id="@+id/id_textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#89000000"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/id_textViewMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#89000000"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/id_textViewMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#89000000"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_textViewAlarming"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#89000000"
+        android:textSize="14sp"/>
+</LinearLayout>

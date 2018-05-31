@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlBackArrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rlHomepageTitleMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_homepage_menu"
+                app:layout_heightPercent="40%h"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginTopPercent="25%"
+                app:layout_widthPercent="70%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="35%h" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rlHomepageTitleMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_homepage_message"
+                app:layout_heightPercent="50%h"
+                app:layout_marginRightPercent="10%"
+                app:layout_marginTopPercent="25%"
+                app:layout_widthPercent="40%h" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</merge>

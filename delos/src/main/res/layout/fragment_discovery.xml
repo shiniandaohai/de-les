@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginRight="0dp"
+        android:background="@color/layout_title_bg"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/id_left"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:id="@+id/tv_about"
+            android:text="@string/discovery_about"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/normal_large_txt"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_sample"
+            android:text="@string/discovery_sample"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/normal_large_txt"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_feature"
+            android:text="@string/discovery_feature"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/normal_large_txt"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_bar"
+        android:visibility="gone"
+        android:src="@mipmap/up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_padding" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="1dp">
+        <TextView
+            android:id="@+id/tv_aboutline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_sampleline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_featureline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </LinearLayout>
+    <com.boer.delos.view.TitleLayout
+        android:id="@+id/tl_title_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

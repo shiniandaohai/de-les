@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.boer.delos.view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center">
+<!--modify by sunzhibin-->
+        <ImageButton
+            android:id="@+id/btn_playpause"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            android:background="@drawable/selector_play" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/seeking_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/sbVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="2dip"
+            android:maxWidth="260dip"
+            android:minHeight="2dip"
+            android:minWidth="260dip"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/video_seekbar"
+            android:thumb="@drawable/ic_main_control"
+            android:thumbOffset="0dip" />
+
+        <TextView
+            android:id="@+id/txt_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sbVideo"
+            android:layout_below="@+id/sbVideo"
+            android:text="--:--" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/sbVideo"
+            android:layout_below="@+id/sbVideo"
+            android:text="--:--" />
+
+    </RelativeLayout>
+
+</LinearLayout>

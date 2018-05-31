@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_heightPercent="35%"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="20%">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="68%"
+                app:layout_marginRightPercent="2%"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_stroke_gray">
+
+                <EditText
+                    android:id="@+id/etApplyPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:layout_paddingLeftPercent="3%"
+                    android:hint="@string/family_apply_phone_hint"
+                    android:textColor="@color/gray_text"
+                    android:textSize="16dp"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:background="@null"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/llApplyDeletePhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:layout_widthPercent="13%"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="40%"
+                        android:src="@drawable/ic_cancel"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:id="@+id/tvApplyContactBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="30%"
+                android:text="@string/family_apply_contact_btn"
+                android:textColor="@color/white"
+                android:gravity="center"
+                app:layout_textSizePercent="6%w"
+                android:background="@drawable/shape_login_btn_bg"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="40%"
+            app:layout_marginTopPercent="10%"
+            android:background="@drawable/shape_stroke_gray"
+            >
+
+            <EditText
+                android:id="@+id/etApplyContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_paddingLeftPercent="2%"
+                app:layout_paddingTopPercent="2%"
+                android:hint="@string/family_apply_content_hint"
+                android:textColor="@color/gray_text"
+                app:layout_textSizePercent="5%w"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/tvApplyContentNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                app:layout_marginRightPercent="2%"
+                app:layout_marginBottomPercent="2%"
+                app:layout_textSizePercent="6%w"/>
+
+        </com.zhy.android.percent.support.PercentFrameLayout>
+
+        <TextView
+            android:id="@+id/tvApplySendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="20%"
+            android:text="@string/family_apply_send_btn"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_textSizePercent="6%w"
+            app:layout_marginTopPercent="10%"
+            android:background="@drawable/shape_login_btn_bg"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

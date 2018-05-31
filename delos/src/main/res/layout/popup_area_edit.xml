@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_area_dialog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="@string/edit_button"
+                android:textColor="#3a3a3a"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="@string/delete"
+                android:textColor="#3a3a3a"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_add_new_device"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_new_device"
+                android:textColor="#3a3a3a"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2"/>
+
+        <LinearLayout
+            android:id="@+id/add_have_device"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_have_device"
+                android:textColor="#3a3a3a"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

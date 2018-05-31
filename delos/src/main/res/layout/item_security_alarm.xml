@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSecurityItemGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#99eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="环境检测器"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/llSecurityDefence"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="布防："
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/tbSecurityDefence"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/selector_shock_hint"
+                    />
+
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"/>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSecurityAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="报警："
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/ivSecurityBlackPoint"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/ic_alarm_off"/>
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"/>-->
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llElectricity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="电量:"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--电池进度条-->
+                <com.boer.delos.widget.BatteryViewSelf
+                    android:id="@+id/battery_view"
+                    android:layout_width="40dp"
+                    android:layout_height="16dp"
+                    android:visibility="visible"
+                    app:bvColor="#54d769"
+                    app:bvRadius="3"
+                    app:bvStrokeColor="@android:color/darker_gray"
+                    app:bvStrokeWidth="1dp"
+                    />
+                <!--低压-->
+                <ImageView
+                    android:id="@+id/iv_lvolt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_gsm_lvolt"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_battery_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"/>-->
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/light_gray_line"/>
+    </LinearLayout>
+    <!--门窗磁-->
+    <LinearLayout
+        android:id="@+id/ll_gsmStatus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+
+            android:text="状态:"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tvGsmStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="关闭"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_weight="1"/>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/light_gray_line"/>
+
+</LinearLayout>

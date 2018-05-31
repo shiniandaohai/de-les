@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckedTextView
+            android:id="@+id/cb_choice"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_checkbox" />
+
+        <ImageView
+            android:id="@+id/iv_device"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="middle"
+                    android:hint="@string/text_reName"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/gray_text_color"
+                    android:textSize="@dimen/normal_small_txt" />
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_addbatch_edit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_device_type"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="二连灯"
+                android:textColor="@color/outdoor_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_device_state"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="二连灯"
+                android:textColor="@color/dinner"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButtonAll"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_toggle"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/tv_device_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_blue_stroke_white_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="未分区"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

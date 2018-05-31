@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/rlPopupScenceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <EditText
+            android:id="@+id/evCustomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/popup_scene_custom_name"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/gray_et_text"
+            android:textSize="@dimen/normal_txt"
+            android:background="@color/white"
+            android:padding="10dp"
+            tools:text="客厅"
+            />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hscrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/gvScenePopup"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:cacheColorHint="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:padding="10dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/llayout_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_devices_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已添加0台设备"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textSize="@dimen/normal_txt" />
+    </LinearLayout>
+
+
+    <GridView
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:padding="10dp"
+        android:numColumns="3"
+        android:id="@+id/gv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

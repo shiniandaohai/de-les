@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img_deepclean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mall_optimizesleep"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_space"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mall_sleep"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingRight="@dimen/common_space"
+        android:paddingLeft="@dimen/common_space">
+        <ImageView
+            android:id="@+id/img_mattress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mall_mattress"/>
+
+        <ImageView
+            android:id="@+id/img_incurtain"
+            android:layout_marginLeft="@dimen/common_space"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mall_indoorcurtaion"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_space"
+        android:paddingRight="@dimen/common_space"
+        android:paddingLeft="@dimen/common_space">
+        <ImageView
+            android:id="@+id/img_nightlight"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mall_nightlight"/>
+
+        <ImageView
+            android:id="@+id/img_outcurtain"
+            android:layout_marginLeft="@dimen/common_space"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mall_outdoorcurtain"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

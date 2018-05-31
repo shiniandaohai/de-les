@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <!-- 显示部分 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#128ce3">
+
+        <LinearLayout
+            android:id="@+id/ll_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ac_set_temp_num1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="OFF"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ac_set_temp_num1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/remote_controller_ac_settemp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/ll_center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ll_center"
+            android:text="℃"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_ac_switch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignBaseline="@id/ll_center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/ic_remote_ac_power_off" />
+    </RelativeLayout>
+
+
+    <!-- 功能按键 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+
+        <!-- cool -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/bt_ac_rc_cool"
+                android:button="@null"
+                style="@style/remotecontroller_fun_icon"
+                android:background="@drawable/sel_rc_ac_cool" />
+
+            <TextView
+                style="@style/remotecontroller_fun_text"
+                android:layout_below="@id/bt_ac_rc_cool"
+                android:text="@string/remote_controller_ac_cool" />
+
+        </RelativeLayout>
+
+        <!-- hot -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/bt_ac_rc_hot"
+                style="@style/remotecontroller_fun_icon"
+                android:background="@drawable/sel_rc_ac_hot" />
+
+            <TextView
+                style="@style/remotecontroller_fun_text"
+                android:layout_below="@id/bt_ac_rc_hot"
+                android:text="@string/remote_controller_ac_hot" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/bt_ac_rc_fan"
+                style="@style/remotecontroller_fun_icon"
+                android:background="@drawable/sel_rc_ac_fan" />
+
+            <TextView
+                style="@style/remotecontroller_fun_text"
+                android:layout_below="@id/bt_ac_rc_fan"
+                android:text="@string/remote_controller_ac_fan" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- 功能部分 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_ac_rc_windlevel"
+                style="@style/remotecontroller_fun_icon"
+                android:background="@drawable/sel_rc_ac_midfan" />
+
+            <TextView
+                android:id="@+id/tv_ac_rc_windlevel"
+                style="@style/remotecontroller_fun_text"
+                android:layout_below="@id/bt_ac_rc_windlevel"
+                android:text="@string/remote_controller_ac_windlevel" />
+
+        </RelativeLayout>
+
+        <!-- hot -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/bt_ac_rc_auto"
+                style="@style/remotecontroller_fun_icon"
+                android:background="@drawable/sel_rc_ac_auto" />
+
+            <TextView
+                style="@style/remotecontroller_fun_text"
+                android:layout_below="@id/bt_ac_rc_auto"
+                android:text="@string/remote_controller_ac_auto" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_ac_rc_winddir"
+                style="@style/remotecontroller_fun_icon"
+                android:background="@drawable/sel_rc_ac_shake" />
+
+            <TextView
+                android:id="@+id/tv_ac_rc_winddir"
+                style="@style/remotecontroller_fun_text"
+                android:layout_below="@id/bt_ac_rc_winddir"
+                android:text="@string/remote_controller_ac_winddri" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ac_rc_windir"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_ac_rc_windir_shake"
+            style="@style/remotecontroller_fun_icon"
+            android:background="@drawable/sel_rc_ac_shake" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_ac_rc_windir_hor"
+            style="@style/remotecontroller_fun_icon"
+            android:background="@drawable/sel_rc_ac_winddir_horizon" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_ac_rc_windir_vtl"
+            style="@style/remotecontroller_fun_icon"
+            android:background="@drawable/sel_rc_ac_winddir_vertiacl" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ac_rc_winlevel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_ac_rc_winlevel_weak"
+            style="@style/remotecontroller_fun_icon"
+            android:background="@drawable/sel_rc_ac_windlevel_weak" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_ac_rc_winlevel_mid"
+            style="@style/remotecontroller_fun_icon"
+            android:background="@drawable/sel_rc_ac_windlevel_mid" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_ac_rc_winlevel_str"
+            style="@style/remotecontroller_fun_icon"
+            android:background="@drawable/sel_rc_ac_windlevel_str" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+<!--
+    <View
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>-->
+
+
+<!--    &lt;!&ndash; 底部控制 &ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.boer.jiaweishi.view.TextMoveLayout
+            android:id="@+id/textLayout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="80dp"/>
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/bt_ac_rc_sub"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sel_rc_ac_temp_sub" />
+
+       <!-- <SeekBar
+            android:id="@+id/seekbar_ac_rc_addsub_temp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="50"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:thumbOffset="0dip"
+            android:progressDrawable="@drawable/video_seekbar"
+            android:thumb="@drawable/thumb"
+             />-->
+
+        <FrameLayout
+            android:id="@+id/seekArcContainer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/seekArc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="30dp"
+                seekarc:rotation="180"
+                seekarc:startAngle="90"
+                seekarc:sweepAngle="180"
+                seekarc:touchInside="false"
+                />
+
+            <TextView
+                android:id="@+id/seekArcProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+
+
+        <Button
+            android:id="@+id/bt_ac_rc_add"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sel_rc_ac_temp_add" />
+    </LinearLayout>
+
+</LinearLayout>

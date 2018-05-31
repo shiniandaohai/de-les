@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rlBackArrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_paddingTopPercent="20%h">
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_reset_password_back"
+            app:layout_heightPercent="40%"
+            app:layout_marginLeftPercent="15%h"
+            app:layout_marginTopPercent="15%h"
+            app:layout_paddingRightPercent="15%"
+            app:layout_widthPercent="20%" />
+
+        <TextView
+            android:id="@+id/tvTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="6%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</merge>

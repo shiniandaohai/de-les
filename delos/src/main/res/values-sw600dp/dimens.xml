@@ -1,0 +1,20 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <!--activity_living_room-->
+    <!--ColorArcProgressBar-->
+    <dimen name="ColorArcProgressBar_width">150dp</dimen>
+    <dimen name="ColorArcProgressBar_height">150dp</dimen>
+    <!--舒适生活-->
+    <dimen name="gridview_margintop">100dp</dimen>
+
+
+    <!--新增设备 recycleView top2 item设置-->
+    <dimen name="add_device_item_add_device_size">90dp</dimen>
+    <dimen name="add_device_item_add_device_img_size">45dp</dimen>
+    <dimen name="add_device_item_add_device_tv_height">30dp</dimen>
+    <dimen name="add_device_item_add_device_textsize">14sp</dimen>
+</resources>

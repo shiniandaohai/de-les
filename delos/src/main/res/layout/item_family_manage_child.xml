@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:visibility="visible">
+
+    <com.boer.delos.view.CircleImageView
+        android:id="@+id/ivUserHead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/ic_avatar" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="小黄人"
+        android:textColor="@color/black_text" />
+
+
+    <TextView
+        android:id="@+id/tv_limit_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black_text" />
+
+
+    <ImageView
+        android:id="@+id/ivItemShare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/ic_family_manage_share_gray"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivItemAdministrator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/ic_family_manage_person"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvUnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="待确定"
+        android:textColor="@color/gray_text"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="49dp">
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:text="主卧"
+            android:textColor="@color/gray_et_text"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_device_num"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:text="(1/1)"
+            android:textColor="@color/gray_et_text"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/split_line_color"
+        />
+</LinearLayout>

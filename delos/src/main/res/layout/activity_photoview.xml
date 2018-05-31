@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Translucent">
+
+    <com.boer.delos.view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.boer.delos.widget.ScaleImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/bottomlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="3dp"
+        android:background="@color/layout_base_bg">
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_text" />
+
+        <ImageButton
+            android:id="@+id/btn_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/ic_camera_download" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_camera_delete" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ivRecordImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_gateway_bind_wifilink"
+        app:layout_heightPercent="18%"
+        app:layout_marginLeftPercent="4%"
+        app:layout_widthPercent="22%" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/ivRecordImage"
+        android:orientation="vertical"
+        app:layout_heightPercent="18%"
+        app:layout_paddingLeftPercent="3%"
+        app:layout_widthPercent="62%">
+
+        <TextView
+            android:id="@+id/tvContentTop"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="123"
+            android:textColor="#000000"
+            app:layout_heightPercent="25%"
+            app:layout_marginTopPercent="12%"
+            app:layout_textSizePercent="15%" />
+
+        <TextView
+            android:id="@+id/tvContentCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="123"
+            android:textColor="#888888"
+            app:layout_heightPercent="26%"
+            app:layout_textSizePercent="15%" />
+
+        <TextView
+            android:id="@+id/tvContentBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="123"
+            android:textColor="#888888"
+            app:layout_heightPercent="25%"
+            app:layout_marginBottomPercent="12%"
+            app:layout_textSizePercent="15%" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+        android:id="@+id/ivVideoRecordChecked"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_video_record_unchecked"
+        app:layout_heightPercent="6%"
+        app:layout_marginRightPercent="2%"
+        app:layout_marginTopPercent="6%"
+        app:layout_widthPercent="10%"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ivPlayBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_video_play"
+        app:layout_heightPercent="4%"
+        app:layout_marginRightPercent="2%"
+        app:layout_marginTopPercent="6%"
+        app:layout_widthPercent="10%" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_line" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

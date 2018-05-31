@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    >
+
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#959595"
+        android:text="@string/setting_info_notification"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/normal_txt"
+                android:text="@string/setting_sys_msg" />
+
+
+            <ToggleButton
+                android:id="@+id/switch_sys_msg"
+                android:layout_width="@dimen/system_setting_toggle_width"
+                android:layout_height="@dimen/system_setting_toggle_height"
+                android:background="@drawable/selector_shock_hint"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:background="#eeeeee"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:textSize="@dimen/normal_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_alert_msg" />
+
+
+
+            <ToggleButton
+                android:id="@+id/switch_alert_msg"
+                android:layout_width="@dimen/system_setting_toggle_width"
+                android:layout_height="@dimen/system_setting_toggle_height"
+                android:background="@drawable/selector_shock_hint"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#959595"
+        android:text="@string/setting_info_sleep" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:textSize="@dimen/normal_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_msg_sleep"
+                android:id="@+id/textView4" />
+
+            <ToggleButton
+                android:id="@+id/switch_msg_sleep"
+                android:layout_width="@dimen/system_setting_toggle_width"
+                android:layout_height="@dimen/system_setting_toggle_height"
+                android:background="@drawable/selector_shock_hint"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:background="#eeeeee"
+            />
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_no_trouble_title"
+                android:textSize="@dimen/normal_txt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/system_setting_toggle_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/setting_sleep_interval" />
+
+
+            <TextView
+                android:textSize="@dimen/normal_txt"
+                android:id="@+id/tv_sleep_start"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_divider_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+
+                />
+
+
+            <TextView
+                android:textSize="@dimen/normal_txt"
+                android:id="@+id/tv_sleep_end"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

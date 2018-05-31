@@ -1,0 +1,227 @@
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//华尔斯背景音乐
+//
+//广播查找设备IP
++ (NSData *)getWiseDevice
+{
+    return [self getDatawithByte:0xc0];
+}
+//状态
++ (NSData *)wisePlayStatus
+{
+    return [self getDatawithByte:0xc6];
+}
+//暂停或播放
++ (NSData *)wiseMusicPlayOrPause
+{
+    return [self getDatawithByte:0xc1];
+}
+//上一首
++ (NSData *)wiseMusicPrevious
+{
+    return [self getDatawithByte:0xc2];
+}
+//下一首
++ (NSData *)wiseMusicNext
+{
+    return [self getDatawithByte:0xc3];
+}
+//切换循环模式0x30是获取模式,0x31是切换模式
++ (NSData *)setOrGetLoopMode:(Byte)byte{
+    Byte ch1 = 0x7e;
+    Byte ch2 = 0x7e;
+    Byte ch3 = 0x0;
+    Byte ch4 = 0x5;
+    Byte ch5 = 0xc4;
+    Byte ch6 = byte;
+    Byte ch7 = 0xd;
+    Byte ch8 = 0xa;
+    Byte ch[] = {ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8};
+    NSData *data=[NSData dataWithBytes:ch length:8];
+    return data;
+}
+//关机
++ (NSData *)wiseMusicShutDown
+{
+    return [self getDatawithByte:0xc7];
+}
+//获取当前播放歌曲时长
++ (NSData *)wiseMusicDuration
+{
+    return [self getDatawithByte:0xc8];
+}
+//获取当前播放进度
++ (NSData *)wiseMusicPosition
+{
+    return [self getDatawithByte:0xc9];
+}
+//获取当前播放歌曲名字
++ (NSData *)wiseMusicSongName
+{
+    return [self getDatawithByte:0xca];
+}
+//获取房间号
++ (NSData *)wiseMusicRoomName
+{
+    return [self getDatawithByte:0xcb];
+}
+//设置进度条
++ (NSData *)wiseMusicSetProgress
+{
+    return [self getDatawithByte:0xcc];
+}
+//返回歌曲总数
++ (NSData *)wiseMusicMidiaListSize
+{
+    return [self getDatawithByte:0xce];
+}
+//播放指定歌曲
++ (NSData *)wiseMusicPlayChooseSong:(int)index
+{
+    Byte ch1 = 0x7e;
+    Byte ch2 = 0x7e;
+    Byte ch3 = 0x0;
+    Byte ch4 = 0x8;
+    Byte ch5 = 0xd0;
+    Byte ch6 = index;
+    Byte ch7 = 0;
+    Byte ch8 = 0;
+    Byte ch9 = 0;
+    Byte ch10 = 0x1;
+    Byte ch11 = 0xd;
+    Byte ch12 = 0xa;
+    Byte ch[] = {ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,ch12};
+    NSData *data=[NSData dataWithBytes:ch length:12];
+    return data;
+}
+//获取当前歌曲艺术家
++ (NSData *)wiseMusicGetArtist
+{
+    return [self getDatawithByte:0xd1];
+}
+//设置音量
++ (NSData *)wiseMusicSetVolume
+{
+    return [self getDatawithByte:0xd2];
+}
+//获取音量
++ (NSData *)wiseMusicGetVolume
+{
+    return [self getDatawithByte:0xd3];
+}
+//获取音效
++ (NSData *)wiseMusicGetEffect
+{
+    return [self getDatawithByte:0xde];
+}
+//获取歌曲列表
++ (NSData *)wiseMusicGetList:(int)index
+{
+    return [self getSongListWithIndex:index];
+}
+//十六进制字符串转整数
++ (NSInteger)numberWithHexString:(NSString *)hexString{
+    const char *hexChar = [hexString cStringUsingEncoding:NSUTF8StringEncoding];
+    int hexNumber;
+    sscanf(hexChar, "%x", &hexNumber);
+    return (NSInteger)hexNumber;
+}
+//设置音量0是减音量,1是加音量
++ (NSData *)setMusicVolume:(int)i{
+    Byte ch1 = 0x7e;
+    Byte ch2 = 0x7e;
+    Byte ch3 = 0x0;
+    Byte ch4 = 0x5;
+    Byte ch5 = 0xc5;
+    Byte ch6;
+    i == 0 ? (ch6 = 0x30) : (ch6 = 0x31);
+    Byte ch7 = 0x1;
+    Byte ch8 = 0xd;
+    Byte ch9 = 0xa;
+    Byte ch[] = {ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9};
+    NSData *data=[NSData dataWithBytes:ch length:9];
+    return data;
+}
+//设置音效
++ (NSData *)setMusicEffect:(int)i{
+    Byte ch1 = 0x7e;
+    Byte ch2 = 0x7e;
+    Byte ch3 = 0x0;
+    Byte ch4 = 0x8;
+    Byte ch5 = 0xdf;
+    Byte ch6 = i;
+    Byte ch7 = 0;
+    Byte ch8 = 0;
+    Byte ch9 = 0;
+    Byte ch10 = 0x1;
+    Byte ch11 = 0xd;
+    Byte ch12 = 0xa;
+    Byte ch[] = {ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,ch12};
+    NSData *data=[NSData dataWithBytes:ch length:12];
+    return data;
+}
++ (NSData *)getDatawithByte:(Byte)byte{
+    Byte ch1 = 0x7e;
+    Byte ch2 = 0x7e;
+    Byte ch3 = 0x0;
+    Byte ch4 = 0x4;
+    Byte ch5 = byte;
+    Byte ch6 = 0x1;
+    Byte ch7 = 0xd;
+    Byte ch8 = 0xa;
+    Byte ch[] = {ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8};
+    NSData *data=[NSData dataWithBytes:ch length:8];
+    return data;
+}
++ (NSData *)convertHexStrToData:(NSString *)str {
+    if (!str || [str length] == 0) {
+        return nil;
+    }
+
+    NSMutableData *hexData = [[NSMutableData alloc] initWithCapacity:8];
+    NSRange range;
+    if ([str length] % 2 == 0) {
+        range = NSMakeRange(0, 2);
+    } else {
+        range = NSMakeRange(0, 1);
+    }
+    for (NSInteger i = range.location; i < [str length]; i += 2) {
+        unsigned int anInt;
+        NSString *hexCharStr = [str substringWithRange:range];
+        NSScanner *scanner = [[NSScanner alloc] initWithString:hexCharStr];
+
+        [scanner scanHexInt:&anInt];
+        NSData *entity = [[NSData alloc] initWithBytes:&anInt length:1];
+        [hexData appendData:entity];
+
+        range.location += range.length;
+        range.length = 2;
+    }
+
+    return hexData;
+}
++ (NSData *)getSongListWithIndex:(int)index{
+    NSString *string = [NSString stringWithFormat:@"%@",[[NSString alloc] initWithFormat:@"%1x",index]];
+    NSMutableString *str = [NSMutableString stringWithString:string];
+    while (str.length < 7) {
+        [str appendString:@"0"];
+    }
+    NSData *data1 = [self convertHexStrToData:str];
+    Byte *testByte = (Byte*)[data1 bytes];
+    Byte ch1 = 0x7e;
+    Byte ch2 = 0x7e;
+    Byte ch3 = 0x0;
+    Byte ch4 = 0x8;
+    Byte ch5 = 0xcf;
+    Byte ch6 = 0x1;
+    Byte ch7 = 0xd;
+    Byte ch8 = 0xa;
+    Byte ch[] = {ch1,ch2,ch3,ch4,ch5,testByte[0],testByte[1],testByte[2],testByte[3],ch6,ch7,ch8};
+    NSData *data=[NSData dataWithBytes:ch length:12];
+    return data;
+}

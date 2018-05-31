@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAddDeviceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:scrollbars="none" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAddDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/deep_gray"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivSelectedDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etDeviceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/custom_device_name"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/gray_text"
+                    android:maxLength="6"
+                    android:textSize="@dimen/normal_txt"
+                    android:theme="@style/MyEditText11"
+                    />
+                <LinearLayout
+                    android:id="@+id/llDeleteContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_cancel" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_blue_save"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/scan_device_address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_txt" />
+
+
+            <!--设备地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/device_address"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/normal_txt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/etDeviceAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:ellipsize="start"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/gray_text"
+                        android:textSize="@dimen/normal_txt"
+                        android:theme="@style/MyEditText11"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/add_device_remark"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/normal_txt" />
+
+                <EditText
+                    android:id="@+id/etDeviceRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="请输入备注信息"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/gray_text"
+                    android:layout_marginRight="20dp"
+                    android:textSize="@dimen/normal_txt"
+                    android:theme="@style/MyEditText11"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/add_room_remark"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/normal_txt" />
+
+
+                <EditText
+                    android:id="@+id/tv_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_room_tip"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/gray_text"
+                    android:textSize="@dimen/normal_txt"
+                    android:drawableRight="@mipmap/ic_device_edit"
+                    android:layout_marginRight="20dp"
+                    android:theme="@style/MyEditText11"
+                    android:editable="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_device_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_choice_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|bottom"
+                    android:text="@string/device_choice_brand"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/normal_txt" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_brand"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/gray_text"
+                    android:textSize="@dimen/normal_txt" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvSelectedConfirm"
+                style="@style/normalOkButtonFull"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/confirm_text"
+                android:textSize="@dimen/normal_txt" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

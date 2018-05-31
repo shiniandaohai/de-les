@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ImageView
+        android:id="@+id/ivSelectedDevice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="13%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="40%" />
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="60dp"
+        app:layout_heightPercent="6%"
+        app:layout_widthPercent="60%">
+
+        <EditText
+            android:id="@+id/etModifyDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/custom_device_name"
+            android:minWidth="40dp"
+            android:textColor="@color/gray_text"
+            android:textColorHint="@color/gray_text"
+            android:textSize="14sp"
+            app:layout_heightPercent="90%"
+            app:layout_marginTopPercent="10%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/llDeleteContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_widthPercent="8%">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_cancel" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/gray_line"
+        app:layout_marginTopPercent="1%"
+        app:layout_widthPercent="60%" />
+
+    <LinearLayout
+        android:id="@+id/llLightSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_marginTopPercent="3%">
+
+        <LinearLayout
+            android:id="@+id/llLight1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:id="@+id/tbItemSwitch1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toggle"
+                android:checked="false"
+                android:textColor="@color/common_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLight2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:id="@+id/tbItemSwitch2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toggle"
+                android:checked="false"
+                android:textColor="@color/common_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLight3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:id="@+id/tbItemSwitch3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toggle"
+                android:checked="false"
+                android:textColor="@color/common_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLight4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:id="@+id/tbItemSwitch4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toggle"
+                android:checked="false"
+                android:textColor="@color/common_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivModifySwitch"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/selector_toggle"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_marginTopPercent="3%" />-->
+    <!--<ToggleButton
+        android:id="@+id/tbModifySwitch"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_toggle"
+        android:checked="false"
+        android:textColor="@color/common_bg"
+        android:textOff=""
+        android:textOn=""
+        app:layout_marginTopPercent="3%" />-->
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llModifyScan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_login_btn_bg"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginTopPercent="3.75%"
+        app:layout_widthPercent="70%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_refresh_white"
+            app:layout_heightPercent="50%" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/scan_device_address"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="4.5%"
+        app:layout_marginTopPercent="4%"
+        app:layout_widthPercent="90%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="@string/device_address"
+            android:textColor="@color/gray_text"
+            app:layout_widthPercent="23%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etModifyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                app:layout_heightPercent="98%" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/gray_line" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="6%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="90%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="@string/add_device_remark"
+            android:textColor="@color/gray_text"
+            app:layout_widthPercent="23%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etModifyRemark"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入备注信息"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp"
+                app:layout_heightPercent="99%" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/gray_line" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llRelate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_heightPercent="6%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="90%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="@string/relate_device"
+            android:textColor="@color/gray_text"
+            app:layout_widthPercent="23%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/llRelateDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="@string/click_relate"
+                android:textColor="@color/blue_text" />
+
+            <View
+                android:layout_width="84dp"
+                android:layout_height="1dp"
+                android:background="@color/blue_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvModifyConfirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_login_btn_bg"
+        android:gravity="center"
+        android:text="@string/confirm_text"
+        android:textColor="@color/white"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginBottomPercent="3%"
+        app:layout_widthPercent="80%" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

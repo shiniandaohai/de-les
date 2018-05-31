@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <com.boer.delos.view.CircleImageView
+        android:id="@+id/ivAvatar"
+        android:layout_marginTop="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        tools:text="Newyear"
+        android:textColor="#3a3a3a"
+        android:textSize="@dimen/normal_txt" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        tools:text="54543543434"
+        android:textColor="#3a3a3a"
+        android:textSize="@dimen/normal_txt" />
+    <TextView
+        android:id="@+id/tvHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        tools:text="申请加入 我是测试"
+        android:textColor="#3a3a3a"
+        android:textSize="@dimen/normal_txt" />
+
+    <LinearLayout
+        android:id="@+id/llOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:id="@+id/tvPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="通过"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_family_apply_btn0"
+            />
+        <TextView
+            android:id="@+id/tvRefuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="拒绝"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_family_apply_btn1"
+            />
+        <TextView
+            android:id="@+id/tvBlackList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="加入黑名单"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_family_apply_btn2"
+            />
+    </LinearLayout>
+
+</LinearLayout>

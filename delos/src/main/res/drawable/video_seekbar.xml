@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"> 白色背景设置
+        <shape>
+            <solid android:color="@color/viewfinder_mask" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">红色进度颜色设置
+        <clip>
+            <shape>
+                <solid android:color="#ff0000" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">蓝色拉动进度颜色设置
+        <clip>
+            <shape>
+                <solid android:color="@color/blue_text_water" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

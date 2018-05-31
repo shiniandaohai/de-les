@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <!-- <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/ivItemImage_light_percent_percent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivItemImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="9%"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/selector_light"
+                />
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:text="text"
+                android:textColor="@color/gray_text"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/ivLightSwitch"
+                android:layout_width="@dimen/lvchild_item_toggle_width"
+                android:layout_height="@dimen/lvchild_item_toggle_height"
+                android:src="@drawable/selector_toggle"
+                android:layout_gravity="center_vertical"
+                />
+            <!--<ToggleButton
+                android:id="@+id/tbItemSwitch"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                app:layout_marginLeftPercent="56%"
+                app:layout_marginTopPercent="3%"
+                android:textOn=""
+                android:textOff=""
+                android:textColor="@color/common_bg"
+                android:background="@drawable/selector_toggle"
+                android:checked="false" />-->
+        </com.zhy.android.percent.support.PercentLinearLayout>
+       <!-- <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="15%"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivLightOpen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="12%"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_live_light_open"
+            />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentFrameLayout>-->
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <SeekBar
+            android:id="@+id/sbLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            android:max="100"
+            android:minHeight="16dp"
+            android:progress="20"
+            android:visibility="gone"
+            android:thumb="@drawable/ic_main_control" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

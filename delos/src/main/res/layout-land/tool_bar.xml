@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/button_speaker"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/btn_speaker_off_switch"
+         />
+
+    <ImageButton
+        android:id="@+id/button_recording"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/btn_recording_switch_start"
+        android:layout_marginTop="10dp"
+         />
+    <ImageButton
+        android:id="@+id/button_snapshot"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/btn_snapshot_switch"
+        android:layout_marginTop="10dp"
+         />
+    <CheckedTextView
+        android:id="@+id/img_full"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_camera_small_screen_exit" />
+</LinearLayout>

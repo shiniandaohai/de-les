@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_item"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="10dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_device_type"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_home_device"
+        />
+
+    <TextView
+        android:id="@+id/tv_room_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="主卧"
+        android:textColor="@color/gray_et_text"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_device_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:text="(1/1)"
+        android:textColor="@color/gray_et_text"
+        android:textSize="12sp"/>
+
+</LinearLayout>

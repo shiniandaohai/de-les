@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="6%"
+        android:gravity="center"
+        android:text="正在连接中..."
+        android:textSize="18sp"
+        android:textColor="#191919"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="2%"
+        android:gravity="center"
+        android:text="请选择测试时的状态"
+        android:textSize="16sp"
+        android:textColor="#898989"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llTestStatus"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_widthPercent="60%"
+        app:layout_marginTopPercent="3%"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_before_dinner">
+
+        <TextView
+            android:id="@+id/tvBeforeDinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="饭前"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvAfterDinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="饭后"
+            android:textSize="18sp"
+            android:textColor="#2896E6"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="30%"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginTopPercent="15%"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_blood_sugar"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/gridView_item_size"
+        android:layout_height="@dimen/gridView_item_size">
+
+        <!--背景光环-->
+        <ImageView
+            android:id="@+id/id_imageViewDevice1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/control_halo"
+            android:visibility="visible" />
+
+        <!--设备图片-->
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/id_imageViewDevice2"
+            android:layout_width="@dimen/gridView_item_size"
+            android:layout_height="@dimen/gridView_item_size"
+            android:background="@drawable/ic_circle_air_condition"
+            />
+
+        <TextView
+            android:id="@+id/id_textViewModeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:gravity="top|right"
+            android:text=""
+            android:textSize="@dimen/gridView_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_textViewDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black" />
+</LinearLayout>

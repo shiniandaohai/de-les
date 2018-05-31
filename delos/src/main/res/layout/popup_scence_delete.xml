@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#50000000"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/shape_solid_white_bg"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            app:layout_marginTopPercent="8%"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="25%"
+            android:textColor="@color/black"
+            app:layout_textSizePercent="6%w"
+            android:text="@string/scene_edit_delete_title"/>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            app:layout_marginRightPercent="8.7%"
+            app:layout_marginLeftPercent="8.7%"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="40%"
+            android:text="@string/scene_edit_hint"
+            app:layout_textSizePercent="5%w"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/gray_line" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="26%">
+
+            <TextView
+                android:id="@+id/tvDisagree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_text"
+                android:text="@string/popup_scene_button_cancel"
+                app:layout_textSizePercent="6%w" />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/tvAgree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_text"
+                android:text="@string/popup_scene_button_ok"
+                app:layout_textSizePercent="6%w" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
